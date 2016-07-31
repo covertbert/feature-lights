@@ -7,11 +7,20 @@
 	width: 100%;
 	height: 140px;
 	background-color: $primary;
+	&__container {
+		position: relative;
+		height: 100%;
+		margin-top: -16px;
+	}
+}
+
+.nav--header {
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid $secondary;
 	.menu {
-		position: absolute;
+		float: right;
 		padding-left: 0;
-		right: 0;
-		top: 0;
 		list-style: none;
 		line-height: 140px;
 		&__item {
@@ -23,19 +32,8 @@
 			}
 		}
 	}
-	&__container {
-		position: relative;
-		height: 100%;
-		margin-top: -16px;
-		border-bottom: 2px solid $secondary;
-	}
 }
 
-.header-spacer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 140px;
-	z-index: -1;
+#container {
+	margin-top: 140px;
 }

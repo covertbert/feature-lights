@@ -24,7 +24,7 @@
 
 <header class="header">
 	<div class="container header__container">
-		<div class="nav">
+		<div class="nav nav--header">
 			<ul class="menu">
 				<li class="menu__item">Commercial expertise</li>
 				<li class="menu__item">Home inspiration</li>
@@ -35,5 +35,3 @@
 		</div>
 	</div>
 </header>
-
-<div class="header-spacer"></div>
