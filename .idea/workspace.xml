@@ -2,19 +2,396 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="824a8f81-56da-430d-aad8-34ab8c2852fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scss/base/_variables.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/scss/base/_colors.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/classes/counter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/classes/ext.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/classes/helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/classes/hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/classes/storage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/classes/widgets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/css/fontello.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/css/front.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/css/plainoverlay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/css/plugin_options.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/css/shortcode_skins/example.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/css/shortcode_skins/vertical1.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/css/by_author.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/img/eye-icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/img/eye-icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/js/by_author.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/views/options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/views/shortcodes/woof_author_filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_author/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_insales/css/by_insales.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_insales/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_insales/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_insales/js/by_insales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_insales/views/options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_insales/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_instock/css/by_instock.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_instock/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_instock/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_instock/js/by_instock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_instock/views/options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_instock/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/css/by_sku.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/img/eye-icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/img/eye-icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/js/by_sku.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/views/options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/views/shortcodes/woof_sku_filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_sku/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/css/by_text.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/img/eye-icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/img/eye-icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/js/by_text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/views/options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/views/shortcodes/woof_text_filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/by_text/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/css/html_types/color.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/img/checked4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/img/checked_for_white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/js/html_types/color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/js/html_types/plugin_options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/color/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/css/html_types/image.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/js/html_types/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/js/html_types/plugin_options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/image/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/label/css/html_types/label.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/label/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/label/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/label/js/html_types/label.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/label/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/select_hierarchy/css/html_types/select_hierarchy.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/select_hierarchy/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/select_hierarchy/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/select_hierarchy/js/html_types/select_hierarchy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/select_hierarchy/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/slider/css/html_types/slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/slider/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/slider/info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/slider/js/html_types/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/ext/slider/views/woof.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/fonts/fontello.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/fonts/fontello.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/fonts/fontello.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/fonts/fontello.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/100125.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/autoshow_button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/checked_for_white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/delete2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/eye-icon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/eye-icon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-balls.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-bars.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-bubbles.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-cubes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-cylon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-spin.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-spinning-bubbles.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/loading-spokes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_margins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_padding.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_positions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_table-object.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/grid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading-master/site/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/minus2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/minus3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/move.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/not-found.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/overlay_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plugin_options/100125.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plugin_options/admin_preloader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plugin_options/admin_preloader_2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plugin_options/admin_preloader_3.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plugin_options/listen_catalog_visibility.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plus2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/plus3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/woocs_banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/woof_banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/img/woof_ext_cover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen-sprite@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.proto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/chosen.proto.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/docsupport/chosen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/docsupport/oss-credit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/docsupport/prism.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/docsupport/prism.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/docsupport/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/index.proto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/chosen/options.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/easy-autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/easy-autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/easy-autocomplete.themes.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/easy-autocomplete.themes.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/jquery.easy-autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/jquery.easy-autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/maps/easy-autocomplete.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/maps/easy-autocomplete.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/maps/easy-autocomplete.themes.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/easy-autocomplete/maps/easy-autocomplete.themes.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/front.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/html_types/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/html_types/mselect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/html_types/radio.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/html_types/select.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/icheck.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/arrow-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/arrow-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/header-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/icon-fork.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/icon-github.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/icon-lab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/icon-options.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/ie/icon-star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-bold.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-bold.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-bold.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/montserrat-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/js/custom.js.new" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/js/custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/demo/js/zepto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/icheck.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/icheck.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/icheck.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/aero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/aero@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/flat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/flat@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/grey@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/orange@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/purple@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/red@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/flat/yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/futurico/futurico.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/futurico/futurico.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/futurico/futurico@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/line.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/line@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/line/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/aero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/aero@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/grey@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/minimal.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/minimal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/minimal@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/orange@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/purple@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/red@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/minimal/yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/polaris/polaris.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/polaris/polaris.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/polaris/polaris@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/_all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/aero.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/aero.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/aero@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/blue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/green.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/green@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/grey.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/grey@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/orange.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/orange.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/orange@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/pink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/pink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/purple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/purple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/purple@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/red.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/red@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/square.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/square.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/square@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/yellow.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/yellow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/icheck/skins/square/yellow@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/PSD/sprite-skin.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.skinFlat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.skinHTML5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.skinModern.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.skinNice.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/ion.rangeSlider.skinSimple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/img/sprite-skin-flat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/img/sprite-skin-modern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/img/sprite-skin-nice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/img/sprite-skin-simple.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/js/ion-rangeSlider/ion.rangeSlider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/js/ion-rangeSlider/ion.rangeSlider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/ion.range-slider/js/vendor/jquery-1.11.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/jquery.masonry.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/jquery.md5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/jquery.mousewheel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/mCSB_buttons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/malihu-custom-scrollbar/source_files/mCSB_buttons.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/LICENSE-MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/jquery.plainoverlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/jquery.plainoverlay.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/plainoverlay.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/_animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plainoverlay/sass/progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/plugin_options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/js/woof_sid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/aq_resizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/Changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/SimpleAjaxUploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/SimpleAjaxUploader.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/action.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/action.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/examples/assets/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/examples/assets/css/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/examples/basic_example/file_upload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/examples/basic_example/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/extras/Uploader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/extras/cors.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/extras/sessionProgress.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/extras/uploadProgress.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/lib/simple-ajax-uploader/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/log.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/screenshot-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/screenshot-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/screenshot-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/screenshot-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/screenshot-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/ext_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/html_types/checkbox.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/html_types/mselect.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/html_types/radio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/html_types/select.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/notices/woof_notice_update_213.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/plugin_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/shortcodes/woof_price_filter_select.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/shortcodes/woof_price_filter_slider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/shortcodes/woof_search_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/plugins/woocommerce-products-filter/views/woof.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/app.scss" afterPath="$PROJECT_DIR$/app/scss/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/base/_module.scss" afterPath="$PROJECT_DIR$/app/scss/base/_module.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/layout/_header.scss" afterPath="$PROJECT_DIR$/app/scss/layout/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" afterPath="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css.map" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/archive-product.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/archive-product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/global/breadcrumb.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/global/breadcrumb.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/global/wrapper-start.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/global/wrapper-start.php" />
     </list>
     <ignored path="wordpress-boilerplate-gulp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,11 +468,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php">
+      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scss/layout/_sidebar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="384">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -104,50 +481,20 @@
       <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/scss/layout/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding>
-                <marker date="1469980419000" expanded="true" signature="137:214" ph="..." />
+                <element signature="e#6#249#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scss/base/_variables.scss">
+      <file leaf-file-name="shop.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_module.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scss/vendor/_module.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scss/layout/_sidebar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -177,7 +524,6 @@
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/page.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/archive.php" />
         <option value="$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/global/sidebar.php" />
-        <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/functions.php" />
         <option value="$PROJECT_DIR$/app/scss/layout/_module.scss" />
         <option value="$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/result-count.php" />
@@ -189,10 +535,11 @@
         <option value="$PROJECT_DIR$/app/scss/base/_module.scss" />
         <option value="$PROJECT_DIR$/app/scss/base/_variables.scss" />
         <option value="$PROJECT_DIR$/app/scss/vendor/_module.scss" />
-        <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php" />
         <option value="$PROJECT_DIR$/app/scss/app.scss" />
         <option value="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" />
         <option value="$PROJECT_DIR$/app/scss/layout/_header.scss" />
+        <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php" />
+        <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php" />
       </list>
     </option>
   </component>
@@ -344,103 +691,23 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
+              <option name="myItemId" value="wp-content" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress-boilerplate-gulp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="feature-lights" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress-boilerplate-gulp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress-boilerplate-gulp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wordpress-boilerplate-gulp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
+              <option name="myItemId" value="template-parts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -560,18 +827,18 @@
       <updated>1467802727661</updated>
       <workItem from="1469964628368" duration="140000" />
       <workItem from="1469964808336" duration="54000" />
-      <workItem from="1469964871684" duration="11218000" />
+      <workItem from="1469964871684" duration="11988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11412000" />
+    <option name="totallyTimeSpent" value="12182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2653791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26466382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -579,7 +846,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24711908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24711908" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -610,54 +877,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/archive.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="71" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/inc/custom-header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-903">
@@ -785,14 +1004,6 @@
           <folding>
             <marker date="1469963792000" expanded="true" signature="823:829" ph="→" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +1182,7 @@
         <state relative-caret-position="561">
           <caret line="47" column="3" selection-start-line="23" selection-start-column="2" selection-end-line="47" selection-end-column="3" />
           <folding>
-            <element signature="e#6#690#0#PHP" expanded="true" />
+            <element signature="e#6#690#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -984,10 +1195,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/vendor/_module.scss">
+    <entry file="file://$PROJECT_DIR$/app/scss/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="72">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/README.md">
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/templates/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/woocommerce-filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="46" column="82" selection-start-line="46" selection-start-column="82" selection-end-line="46" selection-end-column="82" />
+          <folding>
+            <marker date="1469981191000" expanded="true" signature="7927:8223" ph="SELECT DISTI... wp_posts" />
+            <marker date="1469981191000" expanded="true" signature="9090:9396" ph="SELECT DISTI... wp_posts" />
+            <marker date="1469981191000" expanded="true" signature="10420:10914" ph="SELECT DISTI... wp_posts" />
+            <marker date="1469981191000" expanded="true" signature="13195:13463" ph="SELECT DISTI... wp_posts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/includes/widget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/templates/widget_start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/layout/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <marker date="1469980419000" expanded="true" signature="137:214" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1000,26 +1288,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/app/scss/vendor/_module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="144">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1032,13 +1304,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/layout/_header.scss">
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding>
-            <marker date="1469980419000" expanded="true" signature="137:214" ph="..." />
+            <element signature="e#6#249#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

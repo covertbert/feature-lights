@@ -15,5 +15,6 @@
 		<section class="sidebar-top">
 			<div class="sidebar-top__logo"></div>
 		</section>
+		<?php the_widget('WP_Ajax_product_filters') ?>
 	</div>
 </aside>
