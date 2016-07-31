@@ -1,10 +1,27 @@
-@import '../base/colors';
+@import '../base/variables';
 
 .sidebar {
 	position: fixed;
-	left: 0;
 	top: 0;
-	height: 100%;
+	left: 0;
 	width: 230px;
+	height: 100%;
 	background-color: $primary;
+
+	&__container {
+		margin-left: 0;
+	}
+}
+
+.sidebar-top {
+	height: 104px;
+	border-bottom: $border-standard;
+
+	&__logo {
+		display: block;
+		width: 190px;
+		height: 80px;
+		margin: 0 auto;
+		background-color: $secondary;
+	}
 }

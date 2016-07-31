@@ -41,7 +41,10 @@ switch( $template ) {
 	case 'twentysixteen' :
 		echo '<div id="primary" class="content-area twentysixteen"><main id="main" class="site-main" role="main">';
 		break;
+	case 'feature-lights' :
+		echo '<div id="container" class="container container__woocommerce"><div id="content" role="main">';
+		break;
 	default :
-		echo '<div id="container" class="container"><div id="content" role="main">';
+		echo '<div id="container"><div id="content" role="main">';
 		break;
 }

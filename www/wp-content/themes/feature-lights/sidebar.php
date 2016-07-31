@@ -11,5 +11,9 @@
 ?>
 
 <aside class="sidebar">
-
+	<div class="container sidebar__container">
+		<section class="sidebar-top">
+			<div class="sidebar-top__logo"></div>
+		</section>
+	</div>
 </aside>
