@@ -1,0 +1,15 @@
+{
+  "host": {
+    "local": "feature-lights-local.dev"
+  },
+  "theme": {
+    "textdomain": "feature-lights",
+    "name": "Havas Lynx WordPress Boilerplate",
+    "uri": "http://havaslynx.com",
+    "description": "Custom WordPress theme",
+    "authorname": "HAVAS LYNX Front End",
+    "authoruri": "https://gitlab.havaslynx.com/groups/frontend",
+    "version": "1.0",
+    "tags": ""
+  }
+}

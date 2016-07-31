@@ -1,0 +1,1 @@
+{"version":3,"sources":["_global.scss"],"names":[],"mappings":"AAAA;EACC,kBAAkB;EAClB,uBAAuB,EAKvB;EAPD;IAKE,aAAa,EACb","file":"style.css","sourcesContent":["body {\n\tbackground: green;\n\tbackground-size: cover;\n\tp {\n\n\t\tcolor: white;\n\t}\n}\n\n"],"sourceRoot":"/source/"}
