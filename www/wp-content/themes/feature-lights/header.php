@@ -22,4 +22,18 @@
 
 <body <?php body_class(); ?>>
 
-<header class="header">hello</header>
+<header class="header">
+	<div class="container header__container">
+		<div class="nav">
+			<ul class="menu">
+				<li class="menu__item">Commercial expertise</li>
+				<li class="menu__item">Home inspiration</li>
+				<li class="menu__item">About</li>
+				<li class="menu__item">Contact</li>
+				<li class="menu__item">Store</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="header-spacer"></div>

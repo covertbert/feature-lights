@@ -138,3 +138,10 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * WooCommerce
+ *
+ * Unhook sidebar
+ */
+//remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
