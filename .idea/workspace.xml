@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="824a8f81-56da-430d-aad8-34ab8c2852fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/wordpress-boilerplate-gulp.iml" afterPath="$PROJECT_DIR$/.idea/feature-lights.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.scss-lint.yml" afterPath="$PROJECT_DIR$/.scss-lint.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/functions.php" afterPath="$PROJECT_DIR$/app/php/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/woocommerce/loop/loop-start.php" afterPath="$PROJECT_DIR$/app/php/woocommerce/loop/loop-start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/woocommerce/loop/orderby.php" afterPath="$PROJECT_DIR$/app/php/woocommerce/loop/orderby.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/woocommerce/loop/price.php" afterPath="$PROJECT_DIR$/app/php/woocommerce/loop/price.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/woocommerce/loop/sale-flash.php" afterPath="$PROJECT_DIR$/app/php/woocommerce/loop/sale-flash.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/base/_typography.scss" afterPath="$PROJECT_DIR$/app/scss/base/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/layout/_header.scss" afterPath="$PROJECT_DIR$/app/scss/layout/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" afterPath="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/pages/_shop.scss" afterPath="$PROJECT_DIR$/app/scss/pages/_shop.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/functions.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css.map" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/loop-start.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/loop-start.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/orderby.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/orderby.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/price.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/price.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/sale-flash.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/loop/sale-flash.php" />
     </list>
     <ignored path="wordpress-boilerplate-gulp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,11 +79,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_shop.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_shop.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scss/pages/_shop.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/wp-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -314,114 +304,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scss" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feature-lights" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <option name="show-excluded-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -522,12 +409,12 @@
       <workItem from="1469964628368" duration="140000" />
       <workItem from="1469964808336" duration="54000" />
       <workItem from="1469964871684" duration="12063000" />
-      <workItem from="1470570291787" duration="12721000" />
+      <workItem from="1470570291787" duration="12857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24978000" />
+    <option name="totallyTimeSpent" value="25114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -572,13 +459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/woocommerce-filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="46" column="82" selection-start-line="46" selection-start-column="82" selection-end-line="46" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce-ajax-filters/includes/widget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -978,6 +858,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="25" />
           <folding />
         </state>
       </provider>
