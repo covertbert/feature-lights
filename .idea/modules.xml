@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/wordpress-boilerplate-gulp.iml" filepath="$PROJECT_DIR$/.idea/wordpress-boilerplate-gulp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/feature-lights.iml" filepath="$PROJECT_DIR$/.idea/feature-lights.iml" />
     </modules>
   </component>
 </project>

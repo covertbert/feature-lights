@@ -1,18 +1,90 @@
 .woocommerce-ordering {
-	::after {
-		content: url('img/arrow-down.png');
+	position: fixed;
+	right: 43px;
+	z-index: 4;
+
+	&__icon {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		z-index: 10;
+		display: block;
+		width: 20px;
+		height: 20px;
+		pointer-events: none;
+		background: url('img/arrow-down.png') no-repeat;
 	}
 
-	.orderby {
-		padding-top: 2px;
-		padding-bottom: 2px;
-		padding-left: 7px;
+	&__select-box {
+		width: 215px;
+		padding: 2px 5px 2px 7px;
 		font-size: 14px;
-		appearance: none;
 		background-color: $primary-color-main;
+		appearance: none;
 	}
 
-	.orderby:focus {
+	&__orderby:focus {
 		outline: none;
 	}
+}
+
+.woocommerce-result-count {
+	position: fixed;
+	z-index: 4;
+}
+
+.shop-products {
+	padding-top: 41px !important;
+}
+
+.shop-products__item {
+	h3 {
+		padding-bottom: 0 !important;
+		font-family: $montserrat-bold;
+		color: $secondary-color-main;
+	}
+
+	img {
+		margin-bottom: 0 !important;
+		border: 1px solid $secondary-color-main;
+	}
+}
+
+.shop-products__price {
+	font-size: 14px;
+	color: $secondary-color-main;
+}
+
+.onsale-banner {
+	position: absolute;
+	top: 9px !important;
+	right: 9px !important;
+	width: 60px;
+	height: 53px;
+	background: url('img/sale-chevron.png');
+	background-size: 60px 53px;
+
+	&__title,
+	&__price {
+		margin-bottom: 0;
+		color: $primary-color-main;
+		text-align: center;
+	}
+
+	&__title {
+		margin: 4px;
+		font-size: 10px;
+	}
+
+	&__price {
+		font-size: 20px;
+		line-height: 12px;
+	}
+}
+
+.add_to_cart_button {
+	width: 80%;
+	background-color: $primary-color-main !important;
+	border: 1px solid $secondary-color-main !important;
+	border-radius: 0 !important;
 }
