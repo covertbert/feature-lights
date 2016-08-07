@@ -25,13 +25,7 @@
 <header class="header">
 	<div class="container header__container">
 		<div class="nav nav--header">
-			<ul class="menu">
-				<li class="menu__item">Commercial expertise</li>
-				<li class="menu__item">Home inspiration</li>
-				<li class="menu__item">About</li>
-				<li class="menu__item">Contact</li>
-				<li class="menu__item">Store</li>
-			</ul>
+			<?php wp_nav_menu( $defaults ); ?>
 		</div>
 	</div>
 </header>

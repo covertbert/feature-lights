@@ -2,165 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="824a8f81-56da-430d-aad8-34ab8c2852fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/others/downloads/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/others/videos/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/js/customizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/js/navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/js/skip-link-focus-fix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/404.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/archive.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/admin/welcome-screen/automattic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/admin/welcome-screen/storefront.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/amex.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/diners.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/discover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/jcb.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/laser.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/maestro.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/mastercard.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/paypal.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/unknown.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/credit-cards/visa.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/customizer/controls/2cl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/images/customizer/controls/2cr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/admin/welcome-screen/welcome.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/admin/welcome-screen/welcome.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/customizer/customizer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/customizer/customizer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/navigation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/skip-link-focus-fix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/skip-link-focus-fix.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/woocommerce/checkout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/js/woocommerce/checkout.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/admin/welcome-screen/welcome-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/admin/welcome-screen/welcome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/admin/welcome-screen/welcome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/base/_base.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/base/_typography.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_404.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_comments.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_content.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_infinite-scroll.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_post-formats.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/components/_widgets.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/jetpack/jetpack-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/jetpack/jetpack.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/jetpack/jetpack.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/layout/_layout.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/utils/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/utils/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/vendors/font-awesome/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/ajax-layered-nav-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/ajax-layered-nav.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/ajax-layered-nav.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/bookings-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/bookings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/bookings.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/brands-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/brands.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/brands.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/bundles-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/bundles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/bundles.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/composite-products-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/composite-products.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/composite-products.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/deposits-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/deposits.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/deposits.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/photography-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/photography.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/photography.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/product-reviews-pro-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/product-reviews-pro.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/product-reviews-pro.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/ship-multiple-addresses-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/ship-multiple-addresses.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/ship-multiple-addresses.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/smart-coupons-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/smart-coupons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/smart-coupons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/variation-swatches-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/variation-swatches.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/variation-swatches.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/wishlists-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/wishlists.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/wishlists.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/woocommerce-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/woocommerce.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/assets/sass/woocommerce/woocommerce.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/comments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/content-none.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/content-page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/content-single.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/content.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/footer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/header.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/admin/class-storefront-admin.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/admin/welcome-screen/component-contribute.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/admin/welcome-screen/component-enhance.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/admin/welcome-screen/component-intro.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/class-storefront.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/customizer/class-storefront-customizer-control-arbitrary.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/customizer/class-storefront-customizer-control-more.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/customizer/class-storefront-customizer-control-radio-image.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/customizer/class-storefront-customizer.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/jetpack/class-storefront-jetpack.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/storefront-functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/storefront-template-functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/storefront-template-hooks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/woocommerce/class-storefront-woocommerce.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-hooks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/languages/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/languages/storefront.pot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/loop.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/page.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/search.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/sidebar.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/single.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/style-rtl.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/template-fullwidth.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/storefront/template-homepage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/head/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/js/modules/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/languagesfeature-lights/feature-lights.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/www/wp-content/themes/languagesfeature-lights/readme.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/functions.php" afterPath="$PROJECT_DIR$/app/php/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/php/header.php" afterPath="$PROJECT_DIR$/app/php/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/app.scss" afterPath="$PROJECT_DIR$/app/scss/app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/base/_typography.scss" afterPath="$PROJECT_DIR$/app/scss/base/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/base/_variables.scss" afterPath="$PROJECT_DIR$/app/scss/base/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/layout/_header.scss" afterPath="$PROJECT_DIR$/app/scss/layout/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" afterPath="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.babel.js" afterPath="$PROJECT_DIR$/gulpfile.babel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/functions.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/readme.txt" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css.map" afterPath="$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css.map" />
     </list>
     <ignored path="wordpress-boilerplate-gulp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -237,54 +97,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_sidebar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scss/layout/_sidebar.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="216">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/php/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="105" column="2" selection-start-line="105" selection-start-column="2" selection-end-line="105" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scss/base/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -321,15 +149,19 @@
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/archive-product.php" />
         <option value="$PROJECT_DIR$/app/scss/base/_module.scss" />
         <option value="$PROJECT_DIR$/app/scss/vendor/_module.scss" />
-        <option value="$PROJECT_DIR$/app/scss/app.scss" />
-        <option value="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" />
-        <option value="$PROJECT_DIR$/app/scss/layout/_header.scss" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/sidebar.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/shop.php" />
         <option value="$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php" />
-        <option value="$PROJECT_DIR$/app/scss/base/_variables.scss" />
-        <option value="$PROJECT_DIR$/gulpfile.babel.js" />
+        <option value="$PROJECT_DIR$/app/scss/base/_typography.scss" />
+        <option value="$PROJECT_DIR$/app/php/header.php" />
         <option value="$PROJECT_DIR$/app/php/functions.php" />
+        <option value="$PROJECT_DIR$/app/scss/pages/_module.scss" />
+        <option value="$PROJECT_DIR$/app/scss/app.scss" />
+        <option value="$PROJECT_DIR$/app/scss/layout/_header.scss" />
+        <option value="$PROJECT_DIR$/app/scss/layout/_sidebar.scss" />
+        <option value="$PROJECT_DIR$/app/scss/pages/_shop.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.babel.js" />
+        <option value="$PROJECT_DIR$/app/scss/base/_variables.scss" />
       </list>
     </option>
   </component>
@@ -485,6 +317,10 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -500,7 +336,69 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress-boilerplate-gulp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-lights" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress-boilerplate-gulp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-lights" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wordpress-boilerplate-gulp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="feature-lights" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,11 +422,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/scss/pages" />
       <recent name="$PROJECT_DIR$/www/wp-content/themes/feature-lights" />
       <recent name="$PROJECT_DIR$/app/scss/vendor/bootstrap" />
       <recent name="$PROJECT_DIR$/app/scss/vendor" />
       <recent name="$PROJECT_DIR$/www" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -606,24 +504,25 @@
       <workItem from="1469964628368" duration="140000" />
       <workItem from="1469964808336" duration="54000" />
       <workItem from="1469964871684" duration="12063000" />
-      <workItem from="1470570291787" duration="1678000" />
+      <workItem from="1470570291787" duration="6510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13935000" />
+    <option name="totallyTimeSpent" value="18767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26824033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24698795" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.82048196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -632,7 +531,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277849" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -656,69 +554,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/add-to-cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/sale-flash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/rating.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/price.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/pagination.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/orderby.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/no-products-found.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/loop-start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/plugins/woocommerce/templates/loop/loop-end.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/template-parts/content.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
@@ -730,13 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -800,6 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -807,6 +636,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1047">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -814,6 +644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="27" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -845,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/base/_module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/woocommerce/archive-product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -870,13 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
           <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -928,17 +745,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/layout/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/vendor/_module.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -960,14 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/js/navigation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1622">
@@ -984,14 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/layout/_sidebar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/languages/feature-lights.pot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1004,13 +799,125 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project-config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/woocommerce/auth/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="151" column="52" selection-start-line="151" selection-start-column="52" selection-end-line="151" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/php/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/wp-content/themes/feature-lights/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="715" column="8" selection-start-line="710" selection-start-column="3" selection-end-line="710" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/base/_module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/pages/_shop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/layout/_sidebar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/layout/_module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/layout/_nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/layout/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/layout/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1470578189000" expanded="true" signature="118:195" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/base/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/app/scss/base/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -1018,18 +925,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+    <entry file="file://$PROJECT_DIR$/app/scss/pages/_module.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/php/functions.php">
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="105" column="2" selection-start-line="105" selection-start-column="2" selection-end-line="105" selection-end-column="2" />
+        <state relative-caret-position="216">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
           <folding />
         </state>
       </provider>

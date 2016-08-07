@@ -8,63 +8,63 @@
  */
 
 if ( ! function_exists( 'feature_lights_setup' ) ) :
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
-function feature_lights_setup() {
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on feature-lights, use a find and replace
-	 * to change 'feature-lights' to the name of your theme in all the template files.
-	 */
-	load_theme_textdomain( 'feature-lights', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
-
-	/*
-	 * Let WordPress manage the document title.
-	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
-	 * provide it for us.
-	 */
-	add_theme_support( 'title-tag' );
-
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
 	 */
-	add_theme_support( 'post-thumbnails' );
+	function feature_lights_setup() {
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on feature-lights, use a find and replace
+		 * to change 'feature-lights' to the name of your theme in all the template files.
+		 */
+		load_theme_textdomain( 'feature-lights', get_template_directory() . '/languages' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'feature-lights' ),
-	) );
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+		/*
+		 * Let WordPress manage the document title.
+		 * By adding theme support, we declare that this theme does not use a
+		 * hard-coded <title> tag in the document head, and expect WordPress to
+		 * provide it for us.
+		 */
+		add_theme_support( 'title-tag' );
 
-	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'feature_lights_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
-}
+		/*
+		 * Enable support for Post Thumbnails on posts and pages.
+		 *
+		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+		 */
+		add_theme_support( 'post-thumbnails' );
+
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus( array(
+			'primary' => esc_html__( 'Primary', 'feature-lights' ),
+		) );
+
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
+
+		// Set up the WordPress core custom background feature.
+		add_theme_support( 'custom-background', apply_filters( 'feature_lights_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
+	}
 endif;
 add_action( 'after_setup_theme', 'feature_lights_setup' );
 
@@ -78,6 +78,7 @@ add_action( 'after_setup_theme', 'feature_lights_setup' );
 function feature_lights_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'feature_lights_content_width', 640 );
 }
+
 add_action( 'after_setup_theme', 'feature_lights_content_width', 0 );
 
 /**
@@ -96,6 +97,7 @@ function feature_lights_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+
 add_action( 'widgets_init', 'feature_lights_widgets_init' );
 
 /**
@@ -108,6 +110,7 @@ function feature_lights_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'feature_lights_scripts' );
 
 /**
@@ -141,3 +144,28 @@ require get_template_directory() . '/inc/jetpack.php';
  * Unhook sidebar
  */
 //remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
+$menu_default = array(
+	'theme_location'  => '',
+	'menu'            => 'menu',
+	'container'       => 'div',
+	'container_class' => 'menu-{menu slug}-container',
+	'menu_class'      => 'menu',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'depth'           => 0,
+);
+
+function my_custom_body_class($classes) {
+	// add 'my-class' to the default autogenerated classes, for this we need to modify the $classes array.
+	$classes[] = 'woocommerce';
+	// return the modified $classes array
+	return $classes;
+}
+
+// add my custom class via body_class filter
+add_filter('body_class','my_custom_body_class');
