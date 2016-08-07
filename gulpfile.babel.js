@@ -16,7 +16,7 @@ gulp.task('compileSassDev', function () {
 		.pipe(maps.init())
 		.pipe(sass())
 		.pipe(rename('style.css'))
-		.pipe(prefix('last 1 version', '> 1%', 'ie 8', 'ie 7'))
+		.pipe(prefix('last 4 version', '> 1%'))
 		.pipe(maps.write('./'))
 		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain))
 		.pipe(browserSync.stream());
@@ -26,20 +26,41 @@ gulp.task('compileScriptsDev', function () {
 	return gulp
 		.src('app/js/**/**.js')
 		.pipe(concat('main.js'))
+		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain) + '/js')
+		.pipe(browserSync.stream());
+});
+
+gulp.task('compilePHP', function () {
+	return gulp
+		.src('app/php/**/**.php')
 		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain))
 		.pipe(browserSync.stream());
 });
 
-gulp.task('clean', function () {
-	del('dist');
+gulp.task('compileLanguages', function () {
+	return gulp
+		.src('app/languages/**/**.*')
+		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain + '/languages'))
+		.pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['compileSassDev'], function () {
+gulp.task('compileOthers', function () {
+	return gulp
+		.src('app/others/**/**.*')
+		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain + '/others'))
+		.pipe(browserSync.stream());
+});
+
+gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compileOthers'], function () {
 	browserSync({
 		proxy: config.host.local,
 		host: 'localhost',
 		notify: false
 	});
 	gulp.watch('app/scss/**/*.scss', ['compileSassDev']);
-	gulp.watch(['**/*.php', 'js/**/*.js', 'app/scss/**/*.scss']).on('change', browserSync.reload);
+	gulp.watch('app/php/**/*.php', ['compilePHP']);
+	gulp.watch('app/languages/**/**.*', ['compileLanguages']);
+	gulp.watch('app/others/**/**.*', ['compileOthers']);
+	gulp.watch('app/php/**/*.php', ['compilePHP']);
+	gulp.watch(['app/**/**.*']).on('change', reload);
 });
