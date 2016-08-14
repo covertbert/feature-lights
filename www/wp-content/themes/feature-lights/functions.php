@@ -105,6 +105,8 @@ add_action( 'widgets_init', 'feature_lights_widgets_init' );
  */
 function feature_lights_scripts() {
 	wp_enqueue_style( 'feature-lights-style', get_stylesheet_uri() );
+	wp_enqueue_script( 'vendor', get_stylesheet_directory_uri(). '/js/vendor.js', false );
+	wp_enqueue_script( 'bundle', get_stylesheet_directory_uri(). '/js/bundle.js', array( 'jquery' ) );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

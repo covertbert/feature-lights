@@ -11,7 +11,13 @@ const prefix = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
 const gutil = require('gulp-util');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
+const browserify = require('browserify');
 const plumber = require('gulp-plumber');
+const babel = require('gulp-babel');
 const config = JSON.parse(fs.readFileSync('project-config.json'));
 
 var onError = function (err) {
@@ -45,14 +51,6 @@ gulp.task('compileSassBuild', function () {
 		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain))
 });
 
-gulp.task('compileScriptsDev', function () {
-	return gulp
-		.src('app/js/**/**.js')
-		.pipe(concat('main.js'))
-		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain) + '/js')
-		.pipe(browserSync.stream());
-});
-
 gulp.task('optimiseImages', () =>
 	gulp.src('app/img/**/**.{jpg,png,svg}')
 		.pipe(imagemin({
@@ -82,7 +80,40 @@ gulp.task('compileOthers', function () {
 		.pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compileOthers', 'optimiseImages'], function () {
+gulp.task('compileScripts', function () {
+	browserify('app/js/app.js')
+		.on('error', function (err) {
+			console.error(err);
+			this.emit('end');
+		})
+		.bundle()
+		.pipe(plumber({
+			errorHandler: onError
+		}))
+		.pipe(source('bundle.js'))
+		.pipe(buffer())
+		.pipe(babel())
+		.pipe(sourcemaps.init({loadMaps: true}))
+		.pipe(sourcemaps.write('./'))
+		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain + '/js'))
+});
+
+gulp.task('compileVendorScripts', function () {
+	browserify('app/js/vendor.js')
+		.on('error', function (err) {
+			console.error(err);
+			this.emit('end');
+		})
+		.bundle()
+		.pipe(plumber({
+			errorHandler: onError
+		}))
+		.pipe(source('vendor.js'))
+		.pipe(buffer())
+		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain + '/js'))
+});
+
+gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compileOthers', 'optimiseImages', 'compileScripts', 'compileVendorScripts'], function () {
 	browserSync({
 		proxy: config.host.local,
 		host: 'localhost',
@@ -94,6 +125,7 @@ gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compile
 	gulp.watch('app/others/**/**.*', ['compileOthers']);
 	gulp.watch('app/php/**/*.php', ['compilePHP']);
 	gulp.watch('app/img/**/**.*', ['optimiseImages']);
+	gulp.watch('app/js/**/**.*', ['compileScripts', 'compileVendorScripts']);
 	gulp.watch(['app/**/**.*']).on('change', reload);
 });
 
