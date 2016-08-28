@@ -9,11 +9,16 @@
 		}return n[o].exports;
 	}var i = typeof require == "function" && require;for (var o = 0; o < r.length; o++) s(r[o]);return s;
 })({ 1: [function (require, module, exports) {
-		var sortingFilterPosition = require('./modules/sorting-filter-position.js');
-	}, { "./modules/sorting-filter-position.js": 2 }], 2: [function (require, module, exports) {
-
-		jQuery('document').on('click', function () {
-			console.log('fuck');
+		jQuery(document).ready(function () {
+			require('./modules/sorting-filter-position.js');
 		});
+	}, { "./modules/sorting-filter-position.js": 2 }], 2: [function (require, module, exports) {
+		// var $ = jQuery;
+		//
+		// var wcContainerPadding = $('.container__woocommerce').css('padding-right');
+		// var wcContainerMargin = $('.container__woocommerce').css('margin-right');
+		// var wcOrderFilter = $('.woocommerce-ordering');
+		//
+		// wcOrderFilter.css('right', wcContainerPadding);
 	}, {}] }, {}, [1]);
 //# sourceMappingURL=bundle.js.map

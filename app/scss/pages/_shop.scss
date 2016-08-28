@@ -1,8 +1,4 @@
 .woocommerce-ordering {
-	position: fixed;
-	right: 43px;
-	z-index: 4;
-
 	&__icon {
 		position: absolute;
 		top: 10px;
@@ -28,13 +24,8 @@
 	}
 }
 
-.woocommerce-result-count {
-	position: fixed;
-	z-index: 4;
-}
-
 .shop-products {
-	padding-top: 41px !important;
+	padding-top: 3px !important;
 }
 
 .shop-products__item {

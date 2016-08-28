@@ -98,22 +98,7 @@ gulp.task('compileScripts', function () {
 		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain + '/js'))
 });
 
-gulp.task('compileVendorScripts', function () {
-	browserify('app/js/vendor.js')
-		.on('error', function (err) {
-			console.error(err);
-			this.emit('end');
-		})
-		.bundle()
-		.pipe(plumber({
-			errorHandler: onError
-		}))
-		.pipe(source('vendor.js'))
-		.pipe(buffer())
-		.pipe(gulp.dest('www/wp-content/themes/' + config.theme.textdomain + '/js'))
-});
-
-gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compileOthers', 'optimiseImages', 'compileScripts', 'compileVendorScripts'], function () {
+gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compileOthers', 'optimiseImages', 'compileScripts'], function () {
 	browserSync({
 		proxy: config.host.local,
 		host: 'localhost',
@@ -125,7 +110,7 @@ gulp.task('serve', ['compileSassDev', 'compilePHP', 'compileLanguages', 'compile
 	gulp.watch('app/others/**/**.*', ['compileOthers']);
 	gulp.watch('app/php/**/*.php', ['compilePHP']);
 	gulp.watch('app/img/**/**.*', ['optimiseImages']);
-	gulp.watch('app/js/**/**.*', ['compileScripts', 'compileVendorScripts']);
+	gulp.watch('app/js/**/**.*', ['compileScripts']);
 	gulp.watch(['app/**/**.*']).on('change', reload);
 });
 
