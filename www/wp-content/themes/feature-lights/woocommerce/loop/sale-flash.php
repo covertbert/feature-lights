@@ -27,9 +27,16 @@ global $post, $product;
 	$price   = get_post_meta( get_the_ID(), '_regular_price', true );
 	$sale    = get_post_meta( get_the_ID(), '_sale_price', true );
 	$savings = $price - $sale;
+
+	if (is_int($savings)) {
+		$savings2dp = $savings;
+	} else {
+		$savings2dp = number_format((float)$price, 2, '.', '');
+	}
+
 	?>
 
 
-	<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="onsale onsale-banner"><p class="onsale-banner__title">' . __( 'SAVE', 'woocommerce' ) . '</p><p class="onsale-banner__price">£' . $savings . '</p></div>', $post, $product ); ?>
+	<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="onsale onsale-banner"><p class="onsale-banner__title">' . __( 'SAVE', 'woocommerce' ) . '</p><p class="onsale-banner__price">£' . $savings2dp . '</p></div>', $post, $product ); ?>
 
 <?php endif; ?>

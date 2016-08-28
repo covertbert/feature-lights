@@ -1077,12 +1077,20 @@ body {
   z-index: 3;
   width: 230px;
   height: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden; }
   .sidebar__container {
     margin-left: 0; }
 
 .sidebar-top {
+  position: fixed;
+  top: 0;
+  left: 15px;
+  z-index: 999;
+  width: 200px;
   height: 104px;
+  background: #fff;
   border-bottom: 2px solid #231f20; }
   .sidebar-top__logo {
     display: block;
@@ -1091,6 +1099,9 @@ body {
     margin: 0 auto;
     background: url("img/logo.png");
     background-size: 190px 80px; }
+
+.filter-container {
+  padding-top: 100px; }
 
 .berocket_aapf_widget_update_button {
   float: right;
@@ -1102,7 +1113,8 @@ body {
 
 .filter-results-heading {
   float: left;
-  margin-top: 15px;
+  margin-top: 116px;
+  margin-bottom: 0;
   font-size: 16px; }
 
 .berocket_aapf_widget-wrapper {
@@ -1121,6 +1133,9 @@ body {
     margin-bottom: 7px; }
 
 .produced-by.berocket_aapf_widget,
+.colour.berocket_aapf_widget,
+.materials.berocket_aapf_widget,
+.price-range.berocket_aapf_widget,
 .designed-by.berocket_aapf_widget {
   width: 100%;
   padding-top: 15px;
@@ -1130,6 +1145,22 @@ body {
   font-size: 14px; }
   .berocket_label_widgets:before {
     margin-bottom: -1px; }
+
+.ui-slider-handle:focus {
+  outline: none; }
+
+.berocket_aapf_widget li.slider span.left input,
+.berocket_aapf_widget li.slider span.right input {
+  width: 80%;
+  border: 0; }
+
+.berocket_aapf_widget li.slider span.left input {
+  padding-left: 0;
+  text-align: left; }
+
+.berocket_aapf_widget li.slider span.right input {
+  padding-right: 2px;
+  text-align: right; }
 
 .woocommerce-ordering__icon {
   position: absolute;
@@ -1179,10 +1210,10 @@ body {
   position: absolute;
   top: 9px !important;
   right: 9px !important;
-  width: 60px;
-  height: 53px;
+  width: 74px;
+  height: 57px;
   background: url("img/sale-chevron.png");
-  background-size: 60px 53px; }
+  background-size: 74px 57px; }
   .onsale-banner__title, .onsale-banner__price {
     margin-bottom: 0;
     color: #fff;
@@ -1192,7 +1223,7 @@ body {
     font-size: 10px; }
   .onsale-banner__price {
     font-size: 20px;
-    line-height: 12px; }
+    line-height: 17px; }
 
 .add_to_cart_button {
   width: 80%;
@@ -1203,7 +1234,7 @@ body {
 .custom-attributes {
   margin: .5em 0 .5em !important; }
   .custom-attributes li {
-    font-size: 14px;
+    font-size: 12px;
     color: #231f20; }
 
 /*# sourceMappingURL=style.css.map */

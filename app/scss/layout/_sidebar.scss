@@ -1,5 +1,3 @@
-@import '../base/variables';
-
 .sidebar {
 	position: fixed;
 	top: 0;
@@ -8,6 +6,8 @@
 	width: 230px;
 	height: 100%;
 	background-color: $primary-color-main;
+	overflow-y: scroll;
+	overflow-x: hidden;
 
 	&__container {
 		margin-left: 0;
@@ -15,7 +15,13 @@
 }
 
 .sidebar-top {
+	position: fixed;
+	top: 0;
+	left: 15px;
+	z-index: 999;
+	width: 200px;
 	height: 104px;
+	background: $primary-color-main;
 	border-bottom: $border-standard;
 
 	&__logo {
@@ -26,6 +32,10 @@
 		background: url('img/logo.png');
 		background-size: 190px 80px;
 	}
+}
+
+.filter-container {
+	padding-top: 100px;
 }
 
 .berocket_aapf_widget_update_button {
@@ -41,7 +51,8 @@
 
 .filter-results-heading {
 	float: left;
-	margin-top: 15px;
+	margin-top: 116px;
+	margin-bottom: 0;
 	font-size: 16px;
 }
 
@@ -65,6 +76,9 @@
 }
 
 .produced-by.berocket_aapf_widget,
+.colour.berocket_aapf_widget,
+.materials.berocket_aapf_widget,
+.price-range.berocket_aapf_widget,
 .designed-by.berocket_aapf_widget {
 	width: 100%;
 	padding-top: 15px;
@@ -77,4 +91,24 @@
 	&:before {
 		margin-bottom: -1px;
 	}
+}
+
+.ui-slider-handle:focus {
+	outline: none;
+}
+
+.berocket_aapf_widget li.slider span.left input,
+.berocket_aapf_widget li.slider span.right input {
+	width: 80%;
+	border: 0;
+}
+
+.berocket_aapf_widget li.slider span.left input {
+	padding-left: 0;
+	text-align: left;
+}
+
+.berocket_aapf_widget li.slider span.right input {
+	padding-right: 2px;
+	text-align: right;
 }

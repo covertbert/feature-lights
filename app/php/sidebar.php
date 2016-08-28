@@ -16,6 +16,8 @@
 			<div class="sidebar-top__logo"></div>
 		</section>
 		<h3 class="filter-results-heading">Filter results</h3>
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		<section class="filter-container">
+			<?php dynamic_sidebar( 'sidebar-1' ); ?>
+		</section>
 	</div>
 </aside>
