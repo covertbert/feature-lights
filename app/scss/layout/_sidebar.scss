@@ -27,3 +27,54 @@
 		background-size: 190px 80px;
 	}
 }
+
+.berocket_aapf_widget_update_button {
+	float: right;
+	font-size: 14px;
+	background: none;
+	border: 1px solid $secondary-color-main;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.filter-results-heading {
+	float: left;
+	margin-top: 15px;
+	font-size: 16px;
+}
+
+.berocket_aapf_widget-wrapper {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	padding-top: 15px;
+	margin-top: 10px;
+	border-top: 2px solid $secondary-color-main;
+}
+
+.berocket_aapf_widget {
+	padding-left: 0;
+	margin-top: 15px;
+
+	li {
+		margin-bottom: 7px;
+	}
+}
+
+.produced-by.berocket_aapf_widget,
+.designed-by.berocket_aapf_widget {
+	width: 100%;
+	padding-top: 15px;
+	border-top: 1px $secondary-color-main dashed;
+}
+
+.berocket_label_widgets {
+	font-size: 14px;
+
+	&:before {
+		margin-bottom: -1px;
+	}
+}

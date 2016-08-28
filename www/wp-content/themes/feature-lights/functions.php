@@ -179,3 +179,19 @@ function custom_shop_item_class($classes) {
 }
 
 add_filter('post_class','custom_shop_item_class');
+
+function wpb_widgets_init() {
+
+	register_sidebar( array(
+		'name' => __( 'Main Sidebar', 'wpb' ),
+		'id' => 'sidebar-1',
+		'description' => __( 'The main sidebar appears on the right on each page except the front page template', 'wpb' ),
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+
+}
+
+add_action( 'widgets_init', 'wpb_widgets_init' );

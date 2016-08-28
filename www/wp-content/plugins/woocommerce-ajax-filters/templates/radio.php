@@ -31,5 +31,5 @@ if ( $terms ):
             </span>
         </li>
     <?php endforeach; ?>
-        <li class="berocket_widget_show_values"<?php if( !$hiden_value ) echo ' style="display: none;"'; ?>>Show value<span class="show_button"></span></li>
+        <li class="berocket_widget_show_values"<?php if( !$hiden_value ) echo ' style="display: none;"'; ?>><?php _e( 'Show value', 'BeRocket_AJAX_domain' ) ?><span class="show_button"></span></li>
 <?php endif; ?>

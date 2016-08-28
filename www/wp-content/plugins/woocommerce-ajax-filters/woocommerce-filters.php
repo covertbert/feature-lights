@@ -3,14 +3,14 @@
  * Plugin Name: Advanced AJAX Product Filters for WooCommerce
  * Plugin URI: http://berocket.com/wp-plugins/product-filters
  * Description: Advanced AJAX Product Filters for WooCommerce
- * Version: 1.1.4
+ * Version: 1.1.5
  * Author: BeRocket
  * Author URI: http://berocket.com
  * Text Domain: BeRocket_AJAX_domain
  * Domain Path: /languages/
  */
 
-define( "BeRocket_AJAX_filters_version", '1.1.4' );
+define( "BeRocket_AJAX_filters_version", '1.1.5' );
 define( "BeRocket_AJAX_domain", 'BeRocket_AJAX_domain' );
 
 define( "AAPF_TEMPLATE_PATH", plugin_dir_path( __FILE__ ) . "templates/" );
@@ -121,7 +121,7 @@ class BeRocket_AAPF {
 
         if ( ! $a['attribute'] || ! $a['type']  ) return false;
 
-        the_widget( 'br_filters', $a);
+        the_widget( 'BeRocket_AAPF_widget', $a);
     }
 
     public static function br_render_form() {

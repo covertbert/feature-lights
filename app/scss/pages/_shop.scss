@@ -44,6 +44,15 @@
 .shop-products__price {
 	font-size: 14px;
 	color: $secondary-color-main;
+
+	ins {
+		text-decoration: none !important;
+	}
+
+	del {
+		font-size: 13px;
+		color: $gray;
+	}
 }
 
 .onsale-banner {
@@ -79,3 +88,13 @@
 	border: 1px solid $secondary-color-main !important;
 	border-radius: 0 !important;
 }
+
+.custom-attributes {
+	margin: .5em 0 .5em !important;
+
+	li {
+		font-size: 14px;
+		color: $secondary-color-main;
+	}
+}
+

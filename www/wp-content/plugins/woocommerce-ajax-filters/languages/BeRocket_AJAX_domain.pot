@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Advanced AJAX Product Filters for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu Feb 11 2016 10:53:27 GMT+0200 (EET)\n"
-"POT-Revision-Date: Thu Feb 11 2016 10:53:29 GMT+0200 (EET)\n"
+"POT-Revision-Date: Thu Jul 07 2016 15:45:32 GMT+0300 (EEST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -40,28 +40,32 @@ msgstr ""
 msgid "http://berocket.com"
 msgstr ""
 
-#: ../woocommerce-filters.php:84
+#: ../woocommerce-filters.php:85
 msgid "Activate WooCommerce plugin before"
 msgstr ""
 
-#: ../woocommerce-filters.php:92
+#: ../woocommerce-filters.php:93
 msgid "Update WooCommerce plugin"
 msgstr ""
 
-#: ../woocommerce-filters.php:98
+#: ../woocommerce-filters.php:99
 msgid "Product Filters Settings"
 msgstr ""
 
-#: ../woocommerce-filters.php:98
+#: ../woocommerce-filters.php:99
 msgid "Product Filters"
 msgstr ""
 
-#: ../includes/widget.php:27
+#: ../includes/widget.php:28
 msgid "Add Filters to Products page"
 msgstr ""
 
-#: ../includes/widget.php:34 ../includes/widget.php:36
+#: ../includes/widget.php:35 ../includes/widget.php:37
 msgid "AJAX Product Filters"
+msgstr ""
+
+#: ../templates/checkbox.php:44 ../templates/radio.php:34
+msgid "Show value"
 msgstr ""
 
 #: ../templates/admin.php:2
@@ -118,6 +122,10 @@ msgstr ""
 
 #: ../templates/admin.php:100
 msgid "Scroll Theme:"
+msgstr ""
+
+#: ../templates/select.php:4
+msgid "Any"
 msgstr ""
 
 #: ../templates/admin-settings.php:9

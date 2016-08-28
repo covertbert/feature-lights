@@ -1068,7 +1068,7 @@ body {
       color: #231f20; }
 
 .container__woocommerce {
-  margin-top: 121px; }
+  margin-top: 91px; }
 
 .sidebar {
   position: fixed;
@@ -1091,6 +1091,45 @@ body {
     margin: 0 auto;
     background: url("img/logo.png");
     background-size: 190px 80px; }
+
+.berocket_aapf_widget_update_button {
+  float: right;
+  font-size: 14px;
+  background: none;
+  border: 1px solid #231f20; }
+  .berocket_aapf_widget_update_button:focus {
+    outline: none; }
+
+.filter-results-heading {
+  float: left;
+  margin-top: 15px;
+  font-size: 16px; }
+
+.berocket_aapf_widget-wrapper {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 15px;
+  margin-top: 10px;
+  border-top: 2px solid #231f20; }
+
+.berocket_aapf_widget {
+  padding-left: 0;
+  margin-top: 15px; }
+  .berocket_aapf_widget li {
+    margin-bottom: 7px; }
+
+.produced-by.berocket_aapf_widget,
+.designed-by.berocket_aapf_widget {
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px #231f20 dashed; }
+
+.berocket_label_widgets {
+  font-size: 14px; }
+  .berocket_label_widgets:before {
+    margin-bottom: -1px; }
 
 .woocommerce-ordering__icon {
   position: absolute;
@@ -1130,6 +1169,11 @@ body {
 .shop-products__price {
   font-size: 14px;
   color: #231f20; }
+  .shop-products__price ins {
+    text-decoration: none !important; }
+  .shop-products__price del {
+    font-size: 13px;
+    color: #999; }
 
 .onsale-banner {
   position: absolute;
@@ -1155,5 +1199,11 @@ body {
   background-color: #fff !important;
   border: 1px solid #231f20 !important;
   border-radius: 0 !important; }
+
+.custom-attributes {
+  margin: .5em 0 .5em !important; }
+  .custom-attributes li {
+    font-size: 14px;
+    color: #231f20; }
 
 /*# sourceMappingURL=style.css.map */

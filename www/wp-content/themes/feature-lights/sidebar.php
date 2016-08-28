@@ -15,6 +15,7 @@
 		<section class="sidebar-top">
 			<div class="sidebar-top__logo"></div>
 		</section>
-		<?php the_widget('WP_Ajax_product_filters') ?>
+		<h3 class="filter-results-heading">Filter results</h3>
+		<?php dynamic_sidebar( 'sidebar-1' ); ?>
 	</div>
 </aside>

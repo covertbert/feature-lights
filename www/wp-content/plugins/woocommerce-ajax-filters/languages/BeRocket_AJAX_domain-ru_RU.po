@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Advanced AJAX Product Filters for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Thu Feb 11 2016 10:53:27 GMT+0200 (EET)\n"
-"PO-Revision-Date: Thu Feb 11 2016 11:32:11 GMT+0200 (EET)\n"
+"PO-Revision-Date: Thu Jul 07 2016 15:50:19 GMT+0300 (EEST)\n"
 "Last-Translator: RazyRx <djcrazysait@mail.ru>\n"
 "Language-Team: \n"
 "Language: Russian\n"
@@ -23,6 +23,14 @@ msgstr ""
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: ru_RU"
 
+#: ../templates/checkbox.php:44 ../templates/radio.php:34
+msgid "Show value"
+msgstr "Показать значения"
+
+#: ../templates/select.php:4
+msgid "Any"
+msgstr "Любые"
+
 #. Name of the plugin
 msgid "Advanced AJAX Product Filters for WooCommerce"
 msgstr "dvanced AJAX Product Filters for WooCommerce"
@@ -39,27 +47,27 @@ msgstr "BeRocket"
 msgid "http://berocket.com"
 msgstr "http://berocket.com"
 
-#: ../woocommerce-filters.php:84
+#: ../woocommerce-filters.php:85
 msgid "Activate WooCommerce plugin before"
 msgstr "Сначала активируйте плагин WooCommerce"
 
-#: ../woocommerce-filters.php:92
+#: ../woocommerce-filters.php:93
 msgid "Update WooCommerce plugin"
 msgstr "Обновите плагин WooCommerce"
 
-#: ../woocommerce-filters.php:98
+#: ../woocommerce-filters.php:99
 msgid "Product Filters Settings"
 msgstr "Product Filters Настройки"
 
-#: ../woocommerce-filters.php:98
+#: ../woocommerce-filters.php:99
 msgid "Product Filters"
 msgstr "Product Filters"
 
-#: ../includes/widget.php:27
+#: ../includes/widget.php:28
 msgid "Add Filters to Products page"
 msgstr "Добавляет фильтры на страницы с продуктами"
 
-#: ../includes/widget.php:34 ../includes/widget.php:36
+#: ../includes/widget.php:35 ../includes/widget.php:37
 msgid "AJAX Product Filters"
 msgstr "AJAX Product Filters"
 

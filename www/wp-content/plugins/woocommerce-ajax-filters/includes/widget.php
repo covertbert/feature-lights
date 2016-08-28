@@ -103,6 +103,7 @@ class BeRocket_AAPF_Widget extends WP_Widget {
                 'scroll_shop_top'                      => @ $br_options['scroll_shop_top'],
                 'hide_sel_value'                       => @ $br_options['hide_value']['sel'],
                 'ajax_request_load'                    => @ $br_options['ajax_request_load'],
+                's'                                    => @ $_GET['s'],
             )
         );
         unset( $current_language );
@@ -209,6 +210,8 @@ class BeRocket_AAPF_Widget extends WP_Widget {
         set_query_var( 'x', time() );
         set_query_var( 'hide_o_value', @ $br_options['hide_value']['o'] );
         set_query_var( 'hide_sel_value', @ $br_options['hide_value']['sel'] );
+        set_query_var( 'before_title', @ $before_title );
+        set_query_var( 'after_title', @ $after_title );
 
         echo $before_widget;
 
@@ -306,72 +309,59 @@ class BeRocket_AAPF_Widget extends WP_Widget {
     }
 
     public static function get_price_range( $wp_query_product_cat, $woocommerce_hide_out_of_stock_items ){
-        global $wp_query;
-        $br_options = apply_filters( 'berocket_aapf_listener_br_options', get_option('br_filters_options') );
-        $wp_query_product_cat_save = $wp_query;
-        $price_range = array();
-        if( @ $br_options['show_all_values'] ) {
-            $products = BeRocket_AAPF_Widget::get_filter_products( $wp_query_product_cat, $woocommerce_hide_out_of_stock_items, false );
-            foreach ( $products as $ID ) {
-                $meta_values = get_post_meta( $ID, '_price' );
-                if ( $meta_values[0] or $woocommerce_hide_out_of_stock_items != 'yes' ) {
-                    $price_range[] = $meta_values[0];
-                }
-                $product_variation = get_children ( array ( 'post_parent' => $ID, 'post_type'   => 'product_variation', 'numberposts' => -1, 'post_status' => 'any' ) );
-                if ( is_array( $product_variation ) ) {
-                    foreach ( $product_variation as $variation ) {
-                        $meta_values = get_post_meta( $variation->ID, '_price' );
-                        if ( $meta_values[0] or $woocommerce_hide_out_of_stock_items != 'yes' ) {
-                            $price_range[] = $meta_values[0];
-                        }
-                    }
-                }
+        global $wpdb, $wp_query;
+        $_POST['product_cat'] = $wp_query_product_cat;
+        $extra_inner = $extra_where = '';
+
+        if ( @ $_POST['product_cat'] and $_POST['product_cat'] != '-1' ) {
+            $product_cat = get_term_by( 'slug', $_POST['product_cat'], 'product_cat' );
+            $sub_categories = get_term_children($product_cat->term_id, 'product_cat');
+            if( empty($sub_categories) || ! is_array($sub_categories) ) {
+                $sub_categories = array();
             }
-        } else {
-            $q_args = $wp_query->query_vars;
-            $q_args['posts_per_page'] = 2000;
-            $q_args['post__in']       = '';
-            $q_args['tax_query']      = '';
-            $q_args['taxonomy']       = '';
-            $q_args['term']           = '';
-            $q_args['meta_query']     = '';
-            $q_args['attribute']      = '';
-            $q_args['title']          = '';
-            $q_args['post_type']      = 'product';
-            $q_args['fields']         = 'ids';
-            $paged                    = 1;
-            do{
-                $q_args['paged'] = $paged;
-                $the_query = new WP_Query($q_args);
-                if ( $the_query->have_posts() ) {
-                    foreach ( $the_query->posts as $ID ) {
-                        $meta_values = get_post_meta( $ID, '_price' );
-                        if ( $meta_values[0] or $woocommerce_hide_out_of_stock_items != 'yes' ) {
-                            $price_range[] = $meta_values[0];
-                        }
-                        $product_variation = get_children ( array ( 'post_parent' => $ID, 'post_type'   => 'product_variation', 'numberposts' => -1, 'post_status' => 'any' ) );
-                        if ( is_array( $product_variation ) ) {
-                            foreach ( $product_variation as $variation ) {
-                                $meta_values = get_post_meta( $variation->ID, '_price' );
-                                if ( $meta_values[0] or $woocommerce_hide_out_of_stock_items != 'yes' ) {
-                                    $price_range[] = $meta_values[0];
-                                }
-                            }
-                        }
-                    }
-                }
-                $paged++;
-            } while($paged <= $the_query->max_num_pages);
+            $sub_categories[] = $product_cat->term_id;
+            $sub_categories = implode(',', $sub_categories);
+
+            $extra_inner = " INNER JOIN {$wpdb->term_relationships} ON ({$wpdb->posts}.ID = {$wpdb->term_relationships}.object_id) ";
+            $extra_where = " AND ( {$wpdb->term_relationships}.term_taxonomy_id IN (" . $sub_categories . ") ) ";
+
+            unset( $sub_categories );
+        } elseif ( isset($wp_query->query_vars['product_tag']) ) {
+            $product_tag = get_term_by( 'slug', $wp_query->query_vars['product_tag'], 'product_tag' );
+            $extra_inner = " INNER JOIN {$wpdb->term_relationships} ON ({$wpdb->posts}.ID = {$wpdb->term_relationships}.object_id) ";
+            $extra_where = " AND ( {$wpdb->term_relationships}.term_taxonomy_id IN (" . $product_tag->term_id . ") ) ";
         }
-        $wp_query                  = $wp_query_product_cat_save;
-        unset( $wp_query_product_cat_save );
-
-        $price_range = array_unique( $price_range );
-
-        if ( @ count( $price_range ) < 2 ) {
-            $price_range = false;
+        $hide_out_of_stock = BeRocket_AAPF_Widget::woocommerce_hide_out_of_stock_items();
+        $out_of_stock1 = '';
+        $out_of_stock2 = '';
+        if ( $hide_out_of_stock == 'yes' ) {
+            $out_of_stock1 = "INNER JOIN {$wpdb->postmeta} AS pm2 ON ({$wpdb->posts}.ID = pm2.post_id)";
+            $out_of_stock2 = "AND ( pm2.meta_key = '_stock_status' AND CAST(pm2.meta_value AS CHAR) = 'instock' )";
         }
+        
 
+        $query_string = "
+                SELECT MIN(cast({$wpdb->postmeta}.meta_value as unsigned)) as min_price, MAX(cast({$wpdb->postmeta}.meta_value as unsigned)) as max_price
+                FROM {$wpdb->posts}
+                INNER JOIN {$wpdb->postmeta} ON ({$wpdb->posts}.ID = {$wpdb->postmeta}.post_id)
+                INNER JOIN {$wpdb->postmeta} AS pm1 ON ({$wpdb->posts}.ID = pm1.post_id)
+                {$out_of_stock1}
+                {$extra_inner}
+                WHERE {$wpdb->posts}.post_type = 'product'
+                AND {$wpdb->posts}.post_status = 'publish'
+                {$extra_where}
+                AND ( {$wpdb->postmeta}.meta_key = '_price' AND {$wpdb->postmeta}.meta_value > 0
+                AND ( pm1.meta_key = '_visibility' AND CAST(pm1.meta_value AS CHAR) IN ('visible','catalog') )
+                {$out_of_stock2} ) ";
+
+        $prices = $wpdb->get_row($query_string);
+        $price_range = false;
+        if( isset($prices->min_price) && isset($prices->max_price) && $prices->min_price != $prices->max_price ) {
+            $price_range = array(
+                apply_filters( 'woocommerce_price_filter_widget_min_amount', $prices->min_price ), 
+                apply_filters( 'woocommerce_price_filter_widget_max_amount', $prices->max_price )
+            );
+        }
         return apply_filters( 'berocket_aapf_get_price_range', $price_range );
     }
 
@@ -379,49 +369,113 @@ class BeRocket_AAPF_Widget extends WP_Widget {
         if ( ! $taxonomy ) return array();
         $re = array();
         if( $hide_empty ) {
-            global $wp_query, $post;
-            $terms = array();
-            $q_args = $wp_query->query_vars;
-            $q_args['posts_per_page'] = 2000;
-            $q_args['post__in']       = '';
-            $q_args['tax_query']      = '';
-            $q_args['taxonomy']       = '';
-            $q_args['term']           = '';
-            $q_args['meta_query']     = '';
-            $q_args['attribute']      = '';
-            $q_args['title']          = '';
-            $q_args['post_type']      = 'product';
-            $q_args['fields']         = 'ids';
-            $paged                    = 1;
-            do{
-                $q_args['paged'] = $paged;
-                $the_query = new WP_Query($q_args);
-                if ( $the_query->have_posts() ) {
-                    foreach ( $the_query->posts as $post_id ) {
-                        $curent_terms = wp_get_object_terms( $post_id, $taxonomy, array( 'fields' => 'ids' ) );
-                        foreach ( $curent_terms as $t ) {
-                            if ( ! in_array( $t,$terms ) ) {
-                                $terms[] = $t;
+            global $wp_query, $post, $wp_the_query;
+            $old_wp_the_query = $wp_the_query;
+            $wp_the_query = $wp_query;
+            if( method_exists('WC_Query', 'get_main_tax_query') && method_exists('WC_Query', 'get_main_tax_query') && 
+            class_exists('WP_Meta_Query') && class_exists('WP_Tax_Query') ) {
+                $args = array(
+                    'orderby'    => $order_by,
+                    'order'      => 'ASC',
+                    'hide_empty' => false,
+                );
+                $re = get_terms( $taxonomy, $args );
+                global $wpdb;
+                $meta_query = WC_Query::get_main_meta_query();
+                $args      = $wp_the_query->query_vars;
+                $tax_query = array();
+                if ( ! empty( $args['product_cat'] ) ) {
+                    $tax_query[ 'product_cat' ] = array(
+                        'taxonomy' => 'product_cat',
+                        'terms'    => array( $args['product_cat'] ),
+                        'field'    => 'slug',
+                    );
+                }
+
+                $meta_query      = new WP_Meta_Query( $meta_query );
+                $tax_query       = new WP_Tax_Query( $tax_query );
+                $meta_query_sql  = $meta_query->get_sql( 'post', $wpdb->posts, 'ID' );
+                $tax_query_sql   = $tax_query->get_sql( $wpdb->posts, 'ID' );
+                $term_ids = wp_list_pluck( $re, 'term_id' );
+
+                // Generate query
+                $query           = array();
+                $query['select'] = "SELECT COUNT( DISTINCT {$wpdb->posts}.ID ) as term_count, terms.term_id as term_count_id";
+                $query['from']   = "FROM {$wpdb->posts}";
+                $query['join']   = "
+                    INNER JOIN {$wpdb->term_relationships} AS term_relationships ON {$wpdb->posts}.ID = term_relationships.object_id
+                    INNER JOIN {$wpdb->term_taxonomy} AS term_taxonomy USING( term_taxonomy_id )
+                    INNER JOIN {$wpdb->terms} AS terms USING( term_id )
+                    " . $tax_query_sql['join'] . $meta_query_sql['join'];
+                $query['where']   = "
+                    WHERE {$wpdb->posts}.post_type IN ( 'product' )
+                    AND {$wpdb->posts}.post_status = 'publish'
+                    " . $tax_query_sql['where'] . $meta_query_sql['where'] . "
+                    AND terms.term_id IN (" . implode( ',', array_map( 'absint', $term_ids ) ) . ")
+                ";
+                $query['group_by'] = "GROUP BY terms.term_id";
+                $query             = apply_filters( 'woocommerce_get_filtered_term_product_counts_query', $query );
+                $query             = implode( ' ', $query );
+                $results           = $wpdb->get_results( $query );
+                $results           = wp_list_pluck( $results, 'term_count', 'term_count_id' );
+                $term_count = array();
+                $terms = array();
+                foreach($re as &$res_count) {
+                    if( ! empty($results[$res_count->term_id] ) ) {
+                        $res_count->count = $results[$res_count->term_id];
+                    } else {
+                        $res_count->count = 0;
+                    }
+                    if( $res_count->count > 0 ) {
+                        $terms[] = $res_count;
+                    }
+                }
+                $re = $terms;
+            } else {
+                $terms = array();
+                $q_args = $wp_query->query_vars;
+                $q_args['posts_per_page'] = 2000;
+                $q_args['post__in']       = '';
+                $q_args['tax_query']      = '';
+                $q_args['taxonomy']       = '';
+                $q_args['term']           = '';
+                $q_args['meta_query']     = '';
+                $q_args['attribute']      = '';
+                $q_args['title']          = '';
+                $q_args['post_type']      = 'product';
+                $q_args['fields']         = 'ids';
+                $paged                    = 1;
+                do{
+                    $q_args['paged'] = $paged;
+                    $the_query = new WP_Query($q_args);
+                    if ( $the_query->have_posts() ) {
+                        foreach ( $the_query->posts as $post_id ) {
+                            $curent_terms = wp_get_object_terms( $post_id, $taxonomy, array( 'fields' => 'ids' ) );
+                            foreach ( $curent_terms as $t ) {
+                                if ( ! in_array( $t,$terms ) ) {
+                                    $terms[] = $t;
+                                }
                             }
                         }
                     }
-                }
-                $paged++;
-            } while($paged <= $the_query->max_num_pages);
-            unset( $q_args );
-            unset( $the_query );
-            wp_reset_query();
-            $args = array(
-                'orderby'           => $order_by,
-                'order'             => 'ASC',
-                'hide_empty'        => false,
-            );
-            $terms2 = get_terms( $taxonomy, $args );
-            foreach ( $terms2 as $t ) {
-                if ( in_array( $t->term_id, $terms ) ) {
-                    $re[] = $t;
+                    $paged++;
+                } while($paged <= $the_query->max_num_pages);
+                unset( $q_args );
+                unset( $the_query );
+                wp_reset_query();
+                $args = array(
+                    'orderby'           => $order_by,
+                    'order'             => 'ASC',
+                    'hide_empty'        => false,
+                );
+                $terms2 = get_terms( $taxonomy, $args );
+                foreach ( $terms2 as $t ) {
+                    if ( in_array( $t->term_id, $terms ) ) {
+                        $re[] = $t;
+                    }
                 }
             }
+            $wp_the_query = $old_wp_the_query;
             return $re;
         } else {
             $args = array(
@@ -586,6 +640,9 @@ class BeRocket_AAPF_Widget extends WP_Widget {
             $product_taxonomy = explode( '|', $_POST['product_taxonomy'] );
             $args['taxonomy'] = $product_taxonomy[0];
             $args['term'] = $product_taxonomy[1];
+        }
+        if( isset($_POST['s']) && strlen($_POST['s']) > 0 ) {
+            $args['s'] = $_POST['s'];
         }
 
         $wp_query = new WP_Query( $args );
