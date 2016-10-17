@@ -11,8 +11,21 @@
 })({ 1: [function (require, module, exports) {
 		jQuery(document).ready(function () {
 			require('./modules/sorting-filter-position.js');
+			require('./modules/cart-flyout.js');
 		});
-	}, { "./modules/sorting-filter-position.js": 2 }], 2: [function (require, module, exports) {
+	}, { "./modules/cart-flyout.js": 2, "./modules/sorting-filter-position.js": 3 }], 2: [function (require, module, exports) {
+		var $ = jQuery;
+
+		$('.wpmenucartli').hover(showFlyoutMenu, hideFlyoutMenu);
+
+		function showFlyoutMenu() {
+			$('.sub-menu.wpmenucart').show();
+		}
+
+		function hideFlyoutMenu() {
+			$('.sub-menu.wpmenucart').hide();
+		}
+	}, {}], 3: [function (require, module, exports) {
 		var $ = jQuery;
 		var filterListHeading = $('.filter-container .widget-title');
 

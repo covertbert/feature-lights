@@ -87,10 +87,11 @@
 }
 
 .add_to_cart_button {
-	width: 80%;
+	width: 90%;
 	background-color: $primary-color-main !important;
 	border: 1px solid $secondary-color-main !important;
 	border-radius: 0 !important;
+	text-align: center;
 }
 
 .custom-attributes {
@@ -102,3 +103,17 @@
 	}
 }
 
+.single-product {
+	.woocommerce-tabs {
+		display: none !important;
+	}
+}
+
+.sub-menu.wpmenucart {
+	display: none;
+	position: fixed;
+	right: 14px;
+	top: 70px;
+	background-color: $primary-color-main !important;
+	border: 1px solid $secondary-color-main !important;
+}

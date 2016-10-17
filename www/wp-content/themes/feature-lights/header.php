@@ -24,6 +24,7 @@
 
 <header class="header">
 	<div class="container header__container">
+		<div class="header__logo"></div>
 		<div class="nav nav--header">
 			<?php wp_nav_menu( $defaults ); ?>
 		</div>

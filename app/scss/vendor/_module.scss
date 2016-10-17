@@ -2,5 +2,10 @@
 @import 'bootstrap/bootstrap-reboot';
 
 .container {
-	margin-left: 230px;
+	margin-left: auto;
+}
+
+body.post-type-archive .container__woocommerce,
+body.post-type-archive .header__container {
+	margin-left: 230px !important;
 }
