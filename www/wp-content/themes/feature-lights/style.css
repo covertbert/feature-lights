@@ -1068,6 +1068,7 @@ body {
       color: #231f20; }
 
 .container__woocommerce {
+  padding-top: 30px;
   margin-top: 91px; }
 
 .sidebar {
@@ -1102,6 +1103,34 @@ body {
 
 .filter-container {
   padding-top: 100px; }
+  .filter-container .widget-title {
+    position: relative; }
+  .filter-container .widget-title:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("img/chevron.svg");
+    background-size: 20px 20px;
+    content: '';
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    transition-duration: .3s; }
+  .filter-container .widget-title--active:after {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  .filter-container .widget-title:hover {
+    cursor: pointer; }
+  .filter-container ul.berocket_aapf_widget {
+    display: none;
+    margin-bottom: 20px; }
+
+.filter-list--active {
+  display: block !important; }
 
 .berocket_aapf_widget_update_button {
   float: right;
@@ -1162,6 +1191,12 @@ body {
   padding-right: 2px;
   text-align: right; }
 
+body.single-product .sidebar {
+  display: none; }
+
+body.single-product .container {
+  margin-left: auto; }
+
 .woocommerce-ordering__icon {
   position: absolute;
   top: 10px;
@@ -1187,6 +1222,8 @@ body {
 
 .shop-products {
   padding-top: 3px !important; }
+  .shop-products .attribute-label-text {
+    font-weight: bold; }
 
 .shop-products__item h3 {
   padding-bottom: 0 !important;

@@ -4,8 +4,8 @@ Contributors: dholovnia, berocket
 Donate link: http://berocket.com
 Tags: filters, product filters, ajax product filters, advanced product filters, woocommerce filters, woocommerce product filters, woocommerce ajax product filters, widget, plugin
 Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 1.1.5
+Tested up to: 4.6.1
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -138,6 +138,11 @@ http://woocommerce-product-filter.berocket.com
 ---
 
 == Changelog ==
+
+= 1.1.6 =
+* Fix - Price for currency exchange
+* Fix - Optimization for price widget
+* Fix - Custom JavaScript errors
 
 = 1.1.5 =
 * Fix - Shortcode doesn't work

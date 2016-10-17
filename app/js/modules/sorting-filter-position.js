@@ -1,7 +1,9 @@
-// var $ = jQuery;
-//
-// var wcContainerPadding = $('.container__woocommerce').css('padding-right');
-// var wcContainerMargin = $('.container__woocommerce').css('margin-right');
-// var wcOrderFilter = $('.woocommerce-ordering');
-//
-// wcOrderFilter.css('right', wcContainerPadding);
+var $ = jQuery;
+var filterListHeading = $('.filter-container .widget-title');
+
+filterListHeading.on('click', function () {
+	var currentFilterButton = $(this);
+	var currentFilterList = $(this).siblings('ul');
+	currentFilterButton.toggleClass('widget-title--active');
+	currentFilterList.toggleClass('filter-list--active');
+});

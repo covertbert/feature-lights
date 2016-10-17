@@ -36,6 +36,41 @@
 
 .filter-container {
 	padding-top: 100px;
+
+	.widget-title {
+		position: relative;
+	}
+
+	.widget-title:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: url('img/chevron.svg');
+		background-size: 20px 20px;
+		content: '';
+		transform: rotate(180deg);
+		transition-duration: .3s;
+	}
+
+	.widget-title--active:after {
+		transform: rotate(0deg);
+	}
+
+	.widget-title:hover {
+		cursor: pointer;
+	}
+
+	ul.berocket_aapf_widget {
+		display: none;
+		margin-bottom: 20px;
+	}
+}
+
+.filter-list--active {
+	display: block !important;
 }
 
 .berocket_aapf_widget_update_button {
@@ -111,4 +146,14 @@
 .berocket_aapf_widget li.slider span.right input {
 	padding-right: 2px;
 	text-align: right;
+}
+
+//Hiding sidebar
+body.single-product {
+	.sidebar {
+		display: none;
+	}
+	.container {
+		margin-left: auto;
+	}
 }

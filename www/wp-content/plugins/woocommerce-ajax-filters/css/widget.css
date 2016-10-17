@@ -178,6 +178,7 @@ span.product-size{
     height: 4px;
     padding: 0;
     display: block;
+    font-size: 10px;
 }
 
 .berocket_filter_slider.ui-widget-content .ui-slider-range, .berocket_filter_price_slider.ui-widget-content .ui-slider-range{
@@ -186,10 +187,11 @@ span.product-size{
 
 .berocket_filter_slider.ui-widget-content .ui-slider-handle, .berocket_filter_price_slider.ui-widget-content .ui-slider-handle{
     background: url("../images/handler.png") no-repeat scroll center center / cover  transparent;
-    width: 12px;
-    height: 12px;
+    width: 1.2em;
+    height: 1.2em;
     border: 0;
     top: -4px;
+    font-size: inherit;
 }
 
 .berocket_aapf_widget li.slider div.slide{

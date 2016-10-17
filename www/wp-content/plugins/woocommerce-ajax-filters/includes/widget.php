@@ -310,49 +310,94 @@ class BeRocket_AAPF_Widget extends WP_Widget {
 
     public static function get_price_range( $wp_query_product_cat, $woocommerce_hide_out_of_stock_items ){
         global $wpdb, $wp_query;
-        $_POST['product_cat'] = $wp_query_product_cat;
-        $extra_inner = $extra_where = '';
-
-        if ( @ $_POST['product_cat'] and $_POST['product_cat'] != '-1' ) {
-            $product_cat = get_term_by( 'slug', $_POST['product_cat'], 'product_cat' );
-            $sub_categories = get_term_children($product_cat->term_id, 'product_cat');
-            if( empty($sub_categories) || ! is_array($sub_categories) ) {
-                $sub_categories = array();
-            }
-            $sub_categories[] = $product_cat->term_id;
-            $sub_categories = implode(',', $sub_categories);
-
-            $extra_inner = " INNER JOIN {$wpdb->term_relationships} ON ({$wpdb->posts}.ID = {$wpdb->term_relationships}.object_id) ";
-            $extra_where = " AND ( {$wpdb->term_relationships}.term_taxonomy_id IN (" . $sub_categories . ") ) ";
-
-            unset( $sub_categories );
-        } elseif ( isset($wp_query->query_vars['product_tag']) ) {
-            $product_tag = get_term_by( 'slug', $wp_query->query_vars['product_tag'], 'product_tag' );
-            $extra_inner = " INNER JOIN {$wpdb->term_relationships} ON ({$wpdb->posts}.ID = {$wpdb->term_relationships}.object_id) ";
-            $extra_where = " AND ( {$wpdb->term_relationships}.term_taxonomy_id IN (" . $product_tag->term_id . ") ) ";
-        }
-        $hide_out_of_stock = BeRocket_AAPF_Widget::woocommerce_hide_out_of_stock_items();
-        $out_of_stock1 = '';
-        $out_of_stock2 = '';
-        if ( $hide_out_of_stock == 'yes' ) {
-            $out_of_stock1 = "INNER JOIN {$wpdb->postmeta} AS pm2 ON ({$wpdb->posts}.ID = pm2.post_id)";
-            $out_of_stock2 = "AND ( pm2.meta_key = '_stock_status' AND CAST(pm2.meta_value AS CHAR) = 'instock' )";
-        }
         
+        if( method_exists('WC_Query', 'get_main_tax_query') && method_exists('WC_Query', 'get_main_tax_query') && 
+        class_exists('WP_Meta_Query') && class_exists('WP_Tax_Query') ) {
+            $query_string = array(
+                'select' => "SELECT MIN(cast(FLOOR(br_prices.meta_value) as decimal)) as min_price, MAX(cast(CEIL(br_prices.meta_value) as decimal)) as max_price
+                    FROM {$wpdb->posts}",
+                'join'   => " INNER JOIN {$wpdb->postmeta} as br_prices ON ({$wpdb->posts}.ID = br_prices.post_id)",
+                'where'  => " WHERE {$wpdb->posts}.post_type = 'product'
+                    AND {$wpdb->posts}.post_status = 'publish'
+                    AND  br_prices.meta_key = '_price' AND br_prices.meta_value > 0");
+            $tax_query  = array();
+            $args       = $wp_query->query_vars;
+            $meta_query = isset( $args['meta_query'] ) ? $args['meta_query'] : array();
+            foreach ( $meta_query as $key => $query ) {
+                if ( ! empty( $query['price_filter'] ) || ! empty( $query['rating_filter'] ) ) {
+                    unset( $meta_query[ $key ] );
+                }
+            }
+            if ( ! empty( $args['product_cat'] ) ) {
+                $tax_query[ 'product_cat' ] = array(
+                    'taxonomy' => 'product_cat',
+                    'terms'    => array( $args['product_cat'] ),
+                    'field'    => 'slug',
+                );
+            }
+            $queried_object = $wp_query->get_queried_object_id();
+            if( ! empty($queried_object) ) {
+                $query_object = $wp_query->get_queried_object();
+                if( ! empty($query_object->taxonomy) && ! empty($query_object->slug) ) {
+                    $tax_query[ $query_object->taxonomy ] = array(
+                        'taxonomy' => $query_object->taxonomy,
+                        'terms'    => array( $query_object->slug ),
+                        'field'    => 'slug',
+                    );
+                }
+            }
+            $meta_query = new WP_Meta_Query( $meta_query );
+            $tax_query  = new WP_Tax_Query( $tax_query );
+            $meta_query_sql  = $meta_query->get_sql( 'post', $wpdb->posts, 'ID' );
+            $tax_query_sql   = $tax_query->get_sql( $wpdb->posts, 'ID' );
+            $query_string['join'] = $query_string['join'].' '. $tax_query_sql['join'] . $meta_query_sql['join'];
+            $query_string['where'] = $query_string['where'].' '. $tax_query_sql['where'] . $meta_query_sql['where'];
+            $query_string = implode( ' ', $query_string );
+        } else {
+            $_POST['product_cat'] = $wp_query_product_cat;
+            $extra_inner = $extra_where = '';
 
-        $query_string = "
-                SELECT MIN(cast({$wpdb->postmeta}.meta_value as unsigned)) as min_price, MAX(cast({$wpdb->postmeta}.meta_value as unsigned)) as max_price
-                FROM {$wpdb->posts}
-                INNER JOIN {$wpdb->postmeta} ON ({$wpdb->posts}.ID = {$wpdb->postmeta}.post_id)
-                INNER JOIN {$wpdb->postmeta} AS pm1 ON ({$wpdb->posts}.ID = pm1.post_id)
-                {$out_of_stock1}
-                {$extra_inner}
-                WHERE {$wpdb->posts}.post_type = 'product'
-                AND {$wpdb->posts}.post_status = 'publish'
-                {$extra_where}
-                AND ( {$wpdb->postmeta}.meta_key = '_price' AND {$wpdb->postmeta}.meta_value > 0
-                AND ( pm1.meta_key = '_visibility' AND CAST(pm1.meta_value AS CHAR) IN ('visible','catalog') )
-                {$out_of_stock2} ) ";
+            if ( @ $_POST['product_cat'] and $_POST['product_cat'] != '-1' ) {
+                $product_cat = get_term_by( 'slug', $_POST['product_cat'], 'product_cat' );
+                $sub_categories = get_term_children($product_cat->term_id, 'product_cat');
+                if( empty($sub_categories) || ! is_array($sub_categories) ) {
+                    $sub_categories = array();
+                }
+                $sub_categories[] = $product_cat->term_id;
+                $sub_categories = implode(',', $sub_categories);
+
+                $extra_inner = " INNER JOIN {$wpdb->term_relationships} ON ({$wpdb->posts}.ID = {$wpdb->term_relationships}.object_id) ";
+                $extra_where = " AND ( {$wpdb->term_relationships}.term_taxonomy_id IN (" . $sub_categories . ") ) ";
+
+                unset( $sub_categories );
+            } elseif ( isset($wp_query->query_vars['product_tag']) ) {
+                $product_tag = get_term_by( 'slug', $wp_query->query_vars['product_tag'], 'product_tag' );
+                $extra_inner = " INNER JOIN {$wpdb->term_relationships} ON ({$wpdb->posts}.ID = {$wpdb->term_relationships}.object_id) ";
+                $extra_where = " AND ( {$wpdb->term_relationships}.term_taxonomy_id IN (" . $product_tag->term_id . ") ) ";
+            }
+            $hide_out_of_stock = BeRocket_AAPF_Widget::woocommerce_hide_out_of_stock_items();
+            $out_of_stock1 = '';
+            $out_of_stock2 = '';
+            if ( $hide_out_of_stock == 'yes' ) {
+                $out_of_stock1 = "INNER JOIN {$wpdb->postmeta} AS pm2 ON ({$wpdb->posts}.ID = pm2.post_id)";
+                $out_of_stock2 = "AND ( pm2.meta_key = '_stock_status' AND CAST(pm2.meta_value AS CHAR) = 'instock' )";
+            }
+            
+
+            $query_string = "
+                    SELECT MIN(cast({$wpdb->postmeta}.meta_value as unsigned)) as min_price, MAX(cast({$wpdb->postmeta}.meta_value as unsigned)) as max_price
+                    FROM {$wpdb->posts}
+                    INNER JOIN {$wpdb->postmeta} ON ({$wpdb->posts}.ID = {$wpdb->postmeta}.post_id)
+                    INNER JOIN {$wpdb->postmeta} AS pm1 ON ({$wpdb->posts}.ID = pm1.post_id)
+                    {$out_of_stock1}
+                    {$extra_inner}
+                    WHERE {$wpdb->posts}.post_type = 'product'
+                    AND {$wpdb->posts}.post_status = 'publish'
+                    {$extra_where}
+                    AND ( {$wpdb->postmeta}.meta_key = '_price' AND {$wpdb->postmeta}.meta_value > 0
+                    AND ( pm1.meta_key = '_visibility' AND CAST(pm1.meta_value AS CHAR) IN ('visible','catalog') )
+                    {$out_of_stock2} ) ";
+        }
 
         $prices = $wpdb->get_row($query_string);
         $price_range = false;

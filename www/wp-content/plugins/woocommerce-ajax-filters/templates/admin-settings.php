@@ -1,3 +1,9 @@
+<?php 
+$dplugin_name = 'WooCommerce AJAX Products Filter';
+$dplugin_link = 'http://berocket.com/product/woocommerce-ajax-products-filter';
+$dplugin_price = 26;
+@ include 'discount.php';
+?>
 <div class="wrap">
     <form method="post" action="options.php">
         <?php

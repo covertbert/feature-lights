@@ -3,14 +3,14 @@
  * Plugin Name: Advanced AJAX Product Filters for WooCommerce
  * Plugin URI: http://berocket.com/wp-plugins/product-filters
  * Description: Advanced AJAX Product Filters for WooCommerce
- * Version: 1.1.5
+ * Version: 1.1.6
  * Author: BeRocket
  * Author URI: http://berocket.com
  * Text Domain: BeRocket_AJAX_domain
  * Domain Path: /languages/
  */
 
-define( "BeRocket_AJAX_filters_version", '1.1.5' );
+define( "BeRocket_AJAX_filters_version", '1.1.6' );
 define( "BeRocket_AJAX_domain", 'BeRocket_AJAX_domain' );
 
 define( "AAPF_TEMPLATE_PATH", plugin_dir_path( __FILE__ ) . "templates/" );
@@ -143,7 +143,7 @@ class BeRocket_AAPF {
 
             if ( @ $_POST['price'] ) {
                 list( $_GET['min_price'], $_GET['max_price'] ) = $_POST['price'];
-                add_filter( 'loop_shop_post_in', array( 'WC_QUERY', 'price_filter' ) );
+                add_filter( 'loop_shop_post_in', array( __CLASS__, 'price_filter' ) );
             }
         }
     }
@@ -157,7 +157,7 @@ class BeRocket_AAPF {
 
             if ( @ $_POST['price'] ) {
                 list( $_GET['min_price'], $_GET['max_price'] ) = $_POST['price'];
-                add_filter( 'loop_shop_post_in', array( 'WC_QUERY', 'price_filter' ) );
+                add_filter( 'loop_shop_post_in', array( __CLASS__, 'price_filter' ) );
             }
 
             if ( @ $_POST['limits'] ) {
