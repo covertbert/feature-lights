@@ -255,7 +255,7 @@ class WpMenuCartPro {
 		if ( isset($this->options['wpml_string_translation']) && function_exists( 'icl_register_string' ) ) {
 			icl_register_string('WP Menu Cart', 'item text', 'item');
 			icl_register_string('WP Menu Cart', 'items text', 'items');
-			icl_register_string('WP Menu Cart', 'empty cart text', 'your cart is currently empty');
+			icl_register_string('WP Menu Cart', 'empty cart text', 'Your cart is currently empty');
 			icl_register_string('WP Menu Cart', 'hover text', 'View order');
 			icl_register_string('WP Menu Cart', 'empty hover text', 'Start shopping');
 		}
@@ -544,11 +544,11 @@ class WpMenuCartPro {
 		if ( isset($this->options['wpml_string_translation']) && function_exists( 'icl_t' ) ) {
 			//use WPML
 			$viewing_cart = icl_t('WP Menu Cart', 'hover text', 'View order');
-			$empty_cart = icl_t('WP Menu Cart', 'empty cart text', 'your cart is currently empty');
+			$empty_cart = icl_t('WP Menu Cart', 'empty cart text', 'Your cart is currently empty');
 		} else {
 			//use regular WP i18n
 			$viewing_cart = __('View order', 'wpmenucart');
-			$empty_cart = __('your cart is currently empty', 'wpmenucart');
+			$empty_cart = __('Your cart is currently empty', 'wpmenucart');
 		}
 
 		$this->menu_items['submenu']['viewing_cart'] = $viewing_cart;

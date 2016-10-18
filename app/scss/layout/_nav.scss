@@ -29,13 +29,28 @@
 			color: $secondary-color-main;
 		}
 
-		//Shop button
-		.menu-item-69 {
-			a {
-				padding-left: 25px;
-				background: url('img/cart.svg') no-repeat;
-				background-size: 20px 20px;
-			}
+		.wpmenucart-contents:hover {
+			text-decoration: none;
 		}
+
+		.menu-item-39 {
+			border-right: 0;
+		}
+
+		.flyout-cart {
+			display: none;
+		}
+	}
+}
+
+body.post-type-archive-product.woocommerce,
+body.single-product.woocommerce,
+body.woocommerce-cart.woocommerce {
+	.menu-item-39 {
+		border-right: 1px solid black;
+	}
+
+	.flyout-cart {
+		display: initial;
 	}
 }
