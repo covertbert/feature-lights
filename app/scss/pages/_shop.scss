@@ -110,10 +110,69 @@
 }
 
 .sub-menu.wpmenucart {
-	display: none;
 	position: fixed;
-	right: 14px;
 	top: 70px;
+	right: 14px;
+	padding-left: 20px;
+	min-width: 340px;
+	display: none;
+	list-style: none;
 	background-color: $primary-color-main !important;
 	border: 1px solid $secondary-color-main !important;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 70%;
+		border-width: 10px;
+		border-style: solid;
+		border-color: transparent transparent black transparent;
+	}
+
+	.wpmenucart-submenu-item {
+		list-style: none;
+		line-height: 25px;
+		a span span {
+			display: inline;
+		}
+	}
+
+	.submenu-title {
+		padding-top: 5px;
+		line-height: 60px;
+		margin-right: 20px;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		font-weight: bold;
+		//&:after {
+		//	position: absolute;
+		//	right: 20px;
+		//	content: '£';
+		//}
+	}
+
+	.woocommerce-Price-amount {
+		position: absolute;
+		right: 20px;
+	}
+
+	.cart-link {
+		margin: 20px 0 10px;
+		line-height: 60px;
+
+		a {
+			padding: 13px 20px;
+			background-color: black;
+			color: white;
+		}
+	}
+
+	.menu-item--subtotal {
+		margin-top: 20px;
+		margin-right: 20px;
+		padding: 10px 0;
+		font-weight: bold;
+		border-top: 1px dashed black;
+		border-bottom: 1px dashed black;
+	}
 }

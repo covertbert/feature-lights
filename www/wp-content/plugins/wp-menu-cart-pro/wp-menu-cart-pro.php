@@ -9,7 +9,7 @@ Author URI: www.wpovernight.com/about
 License: GPL2
 */
 
-class WpMenuCartPro {	 
+class WpMenuCartPro {
 
 	public static $plugin_slug;
 	public static $plugin_basename;
@@ -45,7 +45,7 @@ class WpMenuCartPro {
 		// add filters to selected menus to add cart item <li>
 		add_action( 'init', array( $this, 'filter_nav_menus' ) );
 		// $this->filter_nav_menus();
-		
+
 		add_shortcode('wpmenucart', array( &$this, 'shortcode' ) );
 	}
 
@@ -68,7 +68,7 @@ class WpMenuCartPro {
 		include_once( 'includes/wpmenucart-settings-pro.php' );
 		$this->settings = new WpMenuCartPro_Settings();
 
-		if ( $this->good_to_go() ) {			
+		if ( $this->good_to_go() ) {
 			if (isset($this->options['shop_plugin'])) {
 				switch ($this->options['shop_plugin']) {
 					case 'woocommerce':
@@ -174,10 +174,10 @@ class WpMenuCartPro {
 
 		return $active_plugins;
 	}
-	
+
 	/**
 	 * Get array of active shop plugins
-	 * 
+	 *
 	 * @return array plugin name => plugin path
 	 */
 	public static function get_active_shops() {
@@ -190,7 +190,7 @@ class WpMenuCartPro {
 			'eShop'						=> 'eshop/eshop.php',
 			'Easy Digital Downloads'	=> 'easy-digital-downloads/easy-digital-downloads.php',
 		);
-		
+
 		// filter shop plugins & add shop names as keys
 		$active_shop_plugins = array_intersect( $shop_plugins, $active_plugins );
 
@@ -199,23 +199,23 @@ class WpMenuCartPro {
 
 	/**
 	 * Get array of active old WooCommerce Menu Cart plugins
-	 * 
+	 *
 	 * @return array plugin paths
 	 */
 	public function get_active_old_versions() {
 		$active_plugins = $this->get_active_plugins();
-		
+
 		$old_versions = array (
 			'woocommerce-menu-bar-cart/wc_cart_nav.php',				//first version
 			'woocommerce-menu-bar-cart/woocommerce-menu-cart.php',		//last free version
 			'woocommerce-menu-cart/woocommerce-menu-cart.php',			//never actually released? just in case...
 			'woocommerce-menu-cart-pro/woocommerce-menu-cart-pro.php',	//old pro version
 		);
-			
+
 		$active_old_plugins = array_intersect( $old_versions, $active_plugins );
-				
+
 		return $active_old_plugins;
-	}	
+	}
 
 	/**
 	 * Fallback admin notices
@@ -256,7 +256,7 @@ class WpMenuCartPro {
 			icl_register_string('WP Menu Cart', 'item text', 'item');
 			icl_register_string('WP Menu Cart', 'items text', 'items');
 			icl_register_string('WP Menu Cart', 'empty cart text', 'your cart is currently empty');
-			icl_register_string('WP Menu Cart', 'hover text', 'View your shopping cart');
+			icl_register_string('WP Menu Cart', 'hover text', 'View order');
 			icl_register_string('WP Menu Cart', 'empty hover text', 'Start shopping');
 		}
 	}
@@ -300,7 +300,7 @@ class WpMenuCartPro {
 			wp_register_style( 'wpmenucart-icons', plugins_url( '/css/wpmenucart-icons-pro.css', __FILE__ ), array(), '', 'all' );
 			wp_enqueue_style( 'wpmenucart-icons' );
 		}
-		
+
 		$css = file_exists( get_stylesheet_directory() . '/wpmenucart-main.css' )
 			? get_stylesheet_directory_uri() . '/wpmenucart-main.css'
 			: plugins_url( '/css/wpmenucart-main.css', __FILE__ );
@@ -343,17 +343,17 @@ class WpMenuCartPro {
 			}
 		}
 	}
-	
+
 	/**
 	 * Add Menu Cart to menu
-	 * 
+	 *
 	 * @return menu items + Menu Cart item
 	 */
 	public function add_itemcart_to_menu( $items ) {
 		$item_data = $this->shop->menu_item();
 
 		$classes = 'wpmenucartli wpmenucart-display-'.$this->options['items_alignment'];
-		
+
 		if ($this->get_common_li_classes($items) != '')
 			$classes .= ' ' . $this->get_common_li_classes($items);
 
@@ -365,9 +365,9 @@ class WpMenuCartPro {
 				$classes .= ' mega-with-sub';
 			}
 		}
-		
+
 		$classes .= (isset($this->options['custom_class']) && $this->options['custom_class'] != '') ? ' '. $this->options['custom_class'] : '';
-	
+
 		if ($item_data['cart_contents_count'] == 0) {
 			$classes .= ' empty';
 		}
@@ -390,7 +390,7 @@ class WpMenuCartPro {
 
 		$menu_item_li = '<li class="'.$classes.'" id="wpmenucartli">' . $wpmenucart_menu_item . $wpmenucart_submenu_item . '</li>';
 
-		
+
 		if ( apply_filters('wpmenucart_prepend_menu_item', false) ) {
 			$items = apply_filters( 'wpmenucart_menu_item_wrapper', $menu_item_li ) . $items;
 		} else {
@@ -407,32 +407,32 @@ class WpMenuCartPro {
 	 */
 	public function get_common_li_classes($items) {
 		if (empty($items)) return;
-		
+
 		$libxml_previous_state = libxml_use_internal_errors(true); // enable user error handling
 
 		$dom_items = new DOMDocument;
 		$dom_items->loadHTML( $items );
 		$lis = $dom_items->getElementsByTagName('li');
-		
+
 		if (empty($lis)) {
 			libxml_clear_errors();
 			libxml_use_internal_errors($libxml_previous_state);
 			return;
 		}
-		
+
 		foreach($lis as $li) {
 			if ($li->parentNode->tagName != 'ul')
 				$li_classes[] = explode( ' ', $li->getAttribute('class') );
 		}
-		
+
 		// Uncomment to dump DOM errors / warnings
 		//$errors = libxml_get_errors();
 		//print_r ($errors);
-		
+
 		// clear errors and reset to previous error handling state
 		libxml_clear_errors();
 		libxml_use_internal_errors($libxml_previous_state);
-		
+
 		if ( !empty($li_classes) ) {
 			$common_li_classes = array_shift($li_classes);
 			foreach ($li_classes as $li_class) {
@@ -463,15 +463,15 @@ class WpMenuCartPro {
 			$empty_menu_item = '<a class="wpmenucart-contents empty-wpmenucart" style="display:none">&nbsp;</a>';
 			return $empty_menu_item;
 		}
-		
+
 		if ( isset($this->options['wpml_string_translation']) && function_exists( 'icl_t' ) ) {
 			//use WPML
-			$viewing_cart = icl_t('WP Menu Cart', 'hover text', 'View your shopping cart');
+			$viewing_cart = icl_t('WP Menu Cart', 'hover text', 'View order');
 			$start_shopping = icl_t('WP Menu Cart', 'empty hover text', 'Start shopping');
 			$cart_contents = $item_data['cart_contents_count'] .' '. ( $item_data['cart_contents_count'] == 1 ?  icl_t('WP Menu Cart', 'item text', 'item') :  icl_t('WP Menu Cart', 'items text', 'items') );
 		} else {
 			//use regular WP i18n
-			$viewing_cart = __('View your shopping cart', 'wpmenucart');
+			$viewing_cart = __('View order', 'wpmenucart');
 			$start_shopping = __('Start shopping', 'wpmenucart');
 			$cart_contents = sprintf(_n('%d item', '%d items', $item_data['cart_contents_count'], 'wpmenucart'), $item_data['cart_contents_count']);
 		}
@@ -497,13 +497,13 @@ class WpMenuCartPro {
 
 		$menu_item = '<a class="'.$menu_item_classes.'" href="'.$menu_item_href.'" title="'.$menu_item_title.'">';
 
-		$menu_item_a_content = '';	
+		$menu_item_a_content = '';
 		if (isset($this->options['icon_display'])) {
 			$icon = isset($this->options['cart_icon']) ? $this->options['cart_icon'] : '0';
 			$menu_item_icon = '<i class="wpmenucart-icon-shopping-cart-'.$icon.'"></i>';
 			$menu_item_a_content .= $menu_item_icon;
 		}
-		
+
 		switch ($this->options['items_display']) {
 			case 1: //items only
 				$menu_item_a_content .= '<span class="cartcontents">'.$cart_contents.'</span>';
@@ -520,12 +520,12 @@ class WpMenuCartPro {
 		$this->menu_items['menu']['menu_item_a_content'] = $menu_item_a_content;
 
 		$menu_item .= $menu_item_a_content . '</a>';
-		
+
 		$menu_item = apply_filters ('wpmenucart_menu_item_a', $menu_item,  $item_data, $this->options, $menu_item_a_content, $viewing_cart, $start_shopping, $cart_contents);
 
-		if( !empty( $menu_item ) ) return $menu_item;		
+		if( !empty( $menu_item ) ) return $menu_item;
 	}
-	
+
 	/**
 	 * Create HTML for Menu Cart submenu
 	 */
@@ -540,20 +540,20 @@ class WpMenuCartPro {
 			return $empty_submenu_item;
 		}
 
-						
+
 		if ( isset($this->options['wpml_string_translation']) && function_exists( 'icl_t' ) ) {
 			//use WPML
-			$viewing_cart = icl_t('WP Menu Cart', 'hover text', 'View your shopping cart');
+			$viewing_cart = icl_t('WP Menu Cart', 'hover text', 'View order');
 			$empty_cart = icl_t('WP Menu Cart', 'empty cart text', 'your cart is currently empty');
 		} else {
 			//use regular WP i18n
-			$viewing_cart = __('View your shopping cart', 'wpmenucart');
-			$empty_cart = __('your cart is currently empty', 'wpmenucart');		
+			$viewing_cart = __('View order', 'wpmenucart');
+			$empty_cart = __('your cart is currently empty', 'wpmenucart');
 		}
 
 		$this->menu_items['submenu']['viewing_cart'] = $viewing_cart;
 		$this->menu_items['submenu']['empty_cart'] = $empty_cart;
-		
+
 		// Filter for <ul> submenu classes & style
 		// IMPORTANT! Needs browser reset because of AJAX!
 		/* Usage (in the themes functions.php):
@@ -584,21 +584,22 @@ class WpMenuCartPro {
 			// Based on woocommerce/templates/cart/cart.php		
 			if ( $submenu_data != '' ) {
 				$cart_submenu = '<ul class="' . $submenu_classes . '"' . (!empty($submenu_style) ? ' style="'.$submenu_style.'"' : '') . '>';
+				$cart_submenu .= '<li class="submenu-title">Your order</li>';
 
 				$i = 0;
-				
+
 				$cart_submenu_items = '';
-				
+
 				foreach ( $submenu_data as $submenu_item_data ) {
 					// Format submenu item content (without permalink or li yet!)
-					
+
 					// The thumbnail
-					$cart_submenu_item_content = '<span class="wpmenucart-thumbnail">'.$submenu_item_data['item_thumbnail'].'</span>';
+//					$cart_submenu_item_content = '<span class="wpmenucart-thumbnail">'.$submenu_item_data['item_thumbnail'].'</span>';
 
 					// Item info wrapper
-					$cart_submenu_item_content .= '<span class="wpmenucart-order-item-info">';
+					$cart_submenu_item_content = '<span class="wpmenucart-order-item-info">';
 						// Product Name
-						
+
 						// remove any HTML formatting from the item name
 						$submenu_item_data['item_name'] = strip_tags($submenu_item_data['item_name']);
 
@@ -606,12 +607,12 @@ class WpMenuCartPro {
 						if (strlen($submenu_item_data['item_name']) > apply_filters( 'wpmenucart_submenu_name_truncate', '20') ) {
 							$submenu_item_data['item_name'] = $this->truncate_name($submenu_item_data['item_name']);
 						}
-		
-						$cart_submenu_item_content .= '<span class="wpmenucart-product-name">'.$submenu_item_data['item_name'].'</span>';
 
-						// Quantity x price
+						$cart_submenu_item_content .= '<span class="wpmenucart-product-name">'.$submenu_item_data['item_quantity'] .' x '.$submenu_item_data['item_name'].'</span>';
+
+					// Quantity x price
 						$cart_submenu_item_content .= '<span class="wpmenucart-product-quantity-price">';
-						$cart_submenu_item_content .=  $submenu_item_data['item_quantity'] .' x '. $submenu_item_data['item_price'];
+						$cart_submenu_item_content .=  $submenu_item_data['item_price'];
 						$cart_submenu_item_content .= '</span>';
 					$cart_submenu_item_content .= '</span>';
 
@@ -648,9 +649,12 @@ class WpMenuCartPro {
 				$cart_submenu .= apply_filters('wpmenucart_submenu_items', $cart_submenu_items);
 
 				$viewing_cart = apply_filters('wpmenucart_viewcarttext', $viewing_cart);
-				$cart_link = sprintf('<a href="%s" title="%s">%s &rarr;</a>', $cart_url, $viewing_cart, $viewing_cart );
+				$cart_link = sprintf('<a href="%s" title="%s">%s </a>', $cart_url, $viewing_cart, $viewing_cart );
 				$cart_link_item = '<li class="menu-item wpmenucart-submenu-item cart-link">'.$cart_link.'</li>';
-				
+
+				$cart_total_price = WC()->cart->get_cart_total();
+				$cart_submenu .= '<li class="menu-item menu-item--subtotal wpmenucart-submenu-item ">Total' . $cart_total_price .'</li>';
+
 				$cart_submenu .= apply_filters('wpmenucart_cart_link_item', $cart_link_item);
 
 				$cart_submenu .= '</ul>';
@@ -658,9 +662,9 @@ class WpMenuCartPro {
 				$cart_submenu = sprintf('<ul class="%s" style="display:none"><li class="menu-item wpmenucart-submenu-item clearfix"><a href="%s">%s</a></li></ul>', $submenu_classes, apply_filters ('wpmenucart_emptyurl', $item_data['shop_page_url'] ), apply_filters('wpmenucart_emptyul', $empty_cart));
 			}
 		}
-		return $cart_submenu;	
+		return $cart_submenu;
 	}
-	
+
 	/**
 	 * Create HTML for shortcode
 	 * @param  array $atts shortcode attributes
@@ -673,7 +677,7 @@ class WpMenuCartPro {
 		$html = '<div class="wpmenucart-shortcode '.$flyout.'" style="'.$style.'">'.$menu.'</div>';
 		return $html;
 	}
-	
+
 	public function wpmenucart_ajax() {
 		$variable = $this->wpmenucart_menu_item();
 		$variable.= $this->wpmenucart_submenu_item();
@@ -691,7 +695,7 @@ class WpMenuCartPro {
 		$start = $maxlength - $separatorlength - $lastcharacters;
 		$trunc = strlen($item_name) - $maxlength + $separatorlength;
 		$item_name = substr_replace($item_name, $separator, $start, $trunc);
-	
+
 		$item_name = htmlentities($item_name, ENT_QUOTES, $encoding); // restore html characters
 		return $item_name;
 	}
