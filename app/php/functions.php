@@ -278,3 +278,14 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 	return $fragments;
 }
+
+add_action('woocommerce_single_product_summary', 'my_bit', 60);
+function my_bit() {
+	echo '<div class="row">';
+}
+
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+function wcs_woo_remove_reviews_tab($tabs) {
+	unset($tabs['reviews']);
+	return $tabs;
+}

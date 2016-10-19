@@ -88,10 +88,11 @@
 
 .add_to_cart_button {
 	width: 90%;
+	color: $secondary-color-main !important;
+	text-align: center;
 	background-color: $primary-color-main !important;
 	border: 1px solid $secondary-color-main !important;
 	border-radius: 0 !important;
-	text-align: center;
 }
 
 .custom-attributes {
@@ -100,12 +101,6 @@
 	li {
 		font-size: 12px;
 		color: $secondary-color-main;
-	}
-}
-
-.single-product {
-	.woocommerce-tabs {
-		display: none !important;
 	}
 }
 
@@ -144,11 +139,6 @@
 		border-bottom: 1px solid black;
 		margin-bottom: 20px;
 		font-weight: bold;
-		//&:after {
-		//	position: absolute;
-		//	right: 20px;
-		//	content: '£';
-		//}
 	}
 
 	.woocommerce-Price-amount {

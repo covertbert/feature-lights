@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 $montserrat: 'Montserrat', Arial, sans-serif;
 $montserrat-bold: 'Montserrat Bold', Arial, sans-serif;
 
 html,
 body {
 	font-family: $montserrat;
+}
+
+.button {
+	color: $primary-color-main !important;
+	background-color: $secondary-color-main !important;
+	border: 1px solid $secondary-color-main !important;
+	border-radius: 0 !important;
+
+	&:disabled {
+		display: none !important;
+	}
 }

@@ -1,0 +1,29 @@
+.entry-content {
+	max-width: 1100px;
+	padding: 0 15px;
+	margin: 80px auto 0;
+
+	.woocommerce table.shop_table {
+		border: 0;
+	}
+
+	.cart_item {
+		.product-name a {
+			font-size: 18px;
+			font-weight: bold;
+			color: $secondary-color-main;
+		}
+	}
+}
+
+.cart-collaterals {
+	margin-top: 50px;
+
+	.cart_totals {
+		float: none !important;
+	}
+}
+
+.woocommerce a.remove {
+	color: $secondary-color-main !important;
+}
