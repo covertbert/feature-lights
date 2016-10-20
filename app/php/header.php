@@ -28,6 +28,9 @@
 		<div class="nav nav--header">
 			<?php wp_nav_menu( $defaults ); ?>
 		</div>
+		<div class="nav nav--mobile">
+			<?php wp_nav_menu( $defaults ); ?>
+		</div>
 	</div>
 </header>
 

@@ -3,12 +3,22 @@
 	height: 100%;
 	border-bottom: $border-standard;
 
+	@media(max-width: 810px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
 	.menu {
 		float: right;
 		padding-top: 10px;
 		padding-left: 0;
 		line-height: 110px;
 		list-style: none;
+
+		@media(max-width: 810px) {
+			display: none;
+		}
 
 		&__item {
 			display: inline;
@@ -35,6 +45,41 @@
 
 		.menu-item-39 {
 			border-right: 0;
+		}
+
+		.flyout-cart {
+			display: none;
+		}
+	}
+}
+
+.nav--mobile {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: $primary-color-main;
+	justify-content: center;
+	align-items: center;
+
+	&--active {
+		display: flex;
+	}
+
+	.menu {
+		padding-left: 0;
+		list-style: none;
+
+		&__item {
+			font-size: 30px;
+			line-height: 60px;
+			text-align: center;
+
+			a {
+				color: $secondary-color-main;
+			}
 		}
 
 		.flyout-cart {

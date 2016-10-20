@@ -12,8 +12,9 @@
 		jQuery(document).ready(function () {
 			require('./modules/sorting-filter-position.js');
 			require('./modules/cart-flyout.js');
+			require('./modules/logo-clicks.js');
 		});
-	}, { "./modules/cart-flyout.js": 2, "./modules/sorting-filter-position.js": 3 }], 2: [function (require, module, exports) {
+	}, { "./modules/cart-flyout.js": 2, "./modules/logo-clicks.js": 3, "./modules/sorting-filter-position.js": 4 }], 2: [function (require, module, exports) {
 		var $ = jQuery;
 
 		$('.wpmenucartli').hover(showFlyoutMenu, hideFlyoutMenu);
@@ -26,6 +27,12 @@
 			$('.sub-menu.wpmenucart').hide();
 		}
 	}, {}], 3: [function (require, module, exports) {
+		var $ = jQuery;
+
+		$('.header__logo, .sidebar-top__logo').on('click', function () {
+			window.location = '/';
+		});
+	}, {}], 4: [function (require, module, exports) {
 		var $ = jQuery;
 		var filterListHeading = $('.filter-container .widget-title');
 

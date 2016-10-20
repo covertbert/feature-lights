@@ -1,0 +1,9 @@
+.woocommerce-checkout {
+	.woocommerce-info {
+		display: none;
+	}
+
+	label abbr {
+		color: $secondary-color-main !important;
+	}
+}
